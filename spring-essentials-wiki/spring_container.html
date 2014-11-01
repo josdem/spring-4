@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>. : Entrenamiento - MakingDevs : .</title>
+  
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/starter-template.css">
+  <link rel="stylesheet" href="css/docs.css">
+
+</head>
+<body>
+
+  <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="http://makingdevs.com">
+          <img src="img/logo.png" alt="· MakingDevs ·">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="toc.html">Table of Contents</a>
+          </li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>    
+  </header>
+
+  <div class="bs-header" id="content">
+      <div class="container">
+        <h1>Diseño de aplicaciones con Spring 3/4</h1>
+        <div style="height:70px"> 
+          <p id="p1">Nuestro compromiso es ofrecerte una experiencia que realce las habilidades de aquellas personas que se dedican a desarrollar software.</p>
+          <p id="p2">Sabemos que la responsabilidad de crear aplicaciones debe de estar sustentada con habilidades que permitan garantizar la calidad de las mismas.</p>
+          <p id="p3">“Making best code, through better developers”</p>
+        </div>
+      </div>
+   </div><!--div del header fixed-->
+
+  <div class="container">
+    <div class="row">
+      <h1>El conteneder de Spring</h1>
+<hr/><h2>Bill of materials</h2><p>Si estás usando Maven para la administración de dependencias no necesitas proveerlas de forma explícita. Por ejemplo, para crear una aplicación con Spring usando sólo inyección de dependencias la dependencia de Maven que necesitas es:</p>
+<div class="row">
+  <div class="col-md-12">
+    <h4><i class="icon-file"></i> pom.xml</h4>
+    <script type="syntaxhighlighter" class="brush: xml"><![CDATA[
+      <dependencies>
+        <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-context</artifactId>
+          <version>4.0.0.RELEASE</version>
+        </dependency>
+      </dependencies>
+    ]]></script>
+  </div>
+</div><p>El ejemplo anterior trabaja con el repo Central de Maven. Pero para garantizar la entrega de las dependencias podemos usar alguno de los repositorios de Spring, sólo necesitamos agregarlos a nuestra configuración.</p>
+<div class="row">
+  <div class="col-md-4">
+    <h4><i class="icon-file"></i> pom.xml - RELEASES</h4>
+    <script type="syntaxhighlighter" class="brush: xml"><![CDATA[
+<repositories>
+  <repository>
+    <id>io.spring.repo.maven.release</id>
+    <url>http://repo.spring.io/release/</url>
+    <snapshots>
+      <enabled>false</enabled>
+    </snapshots>
+  </repository>
+</repositories>
+    ]]></script>
+  </div>
+  <div class="col-md-4">
+    <h4><i class="icon-file"></i> pom.xml - MILESTONES</h4>
+    <script type="syntaxhighlighter" class="brush: xml"><![CDATA[
+      <repositories>
+        <repository>
+          <id>io.spring.repo.maven.milestone</id>
+          <url>http://repo.spring.io/milestone/</url>
+          <snapshots>
+            <enabled>false</enabled>
+          </snapshots>
+        </repository>
+      </repositories>
+    ]]></script>
+  </div>
+  <div class="col-md-4">
+    <h4><i class="icon-file"></i> pom.xml - SNAPSHOTS</h4>
+    <script type="syntaxhighlighter" class="brush: xml"><![CDATA[
+    <repositories>
+      <repository>
+        <id>io.spring.repo.maven.snapshot</id>
+        <url>http://repo.spring.io/snapshot/</url>
+        <snapshots>
+          <enabled>true</enabled>
+        </snapshots>
+      </repository>
+    </repositories>
+    ]]></script>
+  </div>
+</div><p>Es posible accidentalmente mezclar diferentes versiones de los JAR&rsquo;s de Spring cuando se usa Maven. Por ejemplo, podrás encontrar librerías de terceros que usan versiones específicas de Spring, o incluso algún subproyecto de Spring usa ciertas versiones del framework, jalando por lo tanto versiones anteriores por Dependencias Transitivas.</p><p>Para solucionar el problema, Maven soporta el concepto de &ldquo;Bill of materials&rdquo;. Puedes importar la dependencia <code>spring-framework-bom</code> en la section de <code>dependencyManagement</code> para asegurarse que las dependencias de Spring(directas y transitivas) son de la misma versión.</p>
+<div class="row">
+  <div class="col-md-6">
+    <h4><i class="icon-file"></i> pom.xml</h4>
+    <script type="syntaxhighlighter" class="brush: xml"><![CDATA[
+      <dependencyManagement>
+        <dependencies>
+          <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-framework-bom</artifactId>
+            <version>4.0.0.RELEASE</version>
+            <type>pom</type>
+            <scope>import</scope>
+          </dependency>
+        </dependencies>
+      </dependencyManagement>
+    ]]></script>
+  </div>
+  <div class="col-md-6">
+    <h4><i class="icon-file"></i> pom.xml</h4>
+    <script type="syntaxhighlighter" class="brush: xml"><![CDATA[
+      <dependencies>
+        <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-context</artifactId>
+        </dependency>
+        <dependency>
+          <groupId>org.springframework</groupId>
+          <artifactId>spring-web</artifactId>
+        </dependency>
+      <dependencies>
+    ]]></script>
+  </div>
+</div><h2>Administración de dependencias con Gradle</h2><p>Para usar los repositorios de Spring con Gradle incluye las URL&rsquo;s apropiadas en la sección de repositorios, y agrega las dependencias a tu gusto:</p>
+<div class="row">
+  <div class="col-md-12">
+    <h4><i class="icon-file"></i> build.gradle</h4>
+    <script type="syntaxhighlighter" class="brush: groovy"><![CDATA[
+      repositories {
+        mavenCentral()
+        maven { url "http://repo.spring.io/release" }  // milestone or snapshotsl
+      }
+      dependencies {
+        compile("org.springframework:spring-context:4.0.0.RELEASE")
+        testCompile("org.springframework:spring-test:4.0.0.RELEASE")
+      }
+    ]]></script>
+  </div>
+</div><h2>BeanFactory y AppCtx</h2>
+<blockquote>
+  <p>
+    En Spring los objetos que forman la columna vertebral de tu aplicación y que son manejados por el contenedor de IoC son llamados <strong>beans</strong>.
+  </p>
+</blockquote><p>Spring provee dos tipos de implementación del contenedor de IoC. La básica es llamada <em>bean factory</em>, la más avanzada es llamada <em>application context</em>, el cual es una extensión compatible con el <em>bean factory</em>. Y la configuración para estos dos tipos de contenedores es idéntica. El <em>AppCtx</em> provee funcionalidades más avanzadas pero se mantiene simple de usar. Es más recomemdable usar el <em>AppCtx</em> para cada aplicación a menos que los recursos de esta sean restringidos, como cuando corremos un appleto o un dispositvo móvil. Dichos contenedores están declarados en las siguientes interfaces:</p>
+<ul>
+  <li><a href="http://docs.spring.io/spring/docs/4.0.x/javadoc-api/org/springframework/beans/factory/BeanFactory.html">org.springframework.beans.factory.BeanFactory</a></li>
+  <li><a href="http://docs.spring.io/spring/docs/4.0.x/javadoc-api/org/springframework/context/ApplicationContext.html">org.springframework.context.ApplicationContext</a></li>
+</ul><p>En donde, como se puede ver el AppCtx es un subtipo de BeanFactory, y mas interesante es, ver los tipos de ApplicationContext con los que contamos para crear una aplicación, entre ellos podemos nombrar de forma destacada:</p>
+<ul>
+  <li>AnnotationConfigApplicationContext</li>
+  <li>AnnotationConfigWebApplicationContext</li>
+  <li>ClassPathXmlApplicationContext</li>
+  <li>FileSystemXmlApplicationContext</li>
+  <li>GenericGroovyApplicationContext</li>
+  <li>GenericWebApplicationContext</li>
+  <li>GenericXmlApplicationContext</li>
+  <li>XmlWebApplicationContext</li>
+</ul>
+<div class="row">
+  <div class="col-md-12">
+    <h4><i class="icon-code"></i> Instanciando el AppCtx</h4>
+    <script type="syntaxhighlighter" class="brush: java"><![CDATA[
+      ApplicationContext context = new FileSystemXmlApplicationContext("/tmp/foo.xml");
+      ApplicationContext context2 = new ClassPathXmlApplicationContext("/tmp/bar.xml");
+    ]]></script>
+  </div>
+</div><p><strong>Adicionalmente, es bueno mencionar que los paquetes <code>org.springframework.beans</code> y <code>org.springframework.context</code> son la base del contenedor de Spring.</strong></p><h2>Diferencias entre el BeanFactory y el AppCtx</h2><p>El <code>BeanFactory</code> proporciona la base fundamental para la funcionalidad del contenedor de IoC de Spring pero sólo se usa directamente en la integración con otros frameworks de terceros, y ahora es en gran parte de naturaleza histórica para la mayoría de los usuarios de Spring. Sin embargo la regla es: <strong>Usa un <code>ApplicationContext</code> a menos que tengas una buena razón para no hacerlo.</strong></p><p>El <code>ApplicationContext</code> agrega la integración con características de AOP, manejo de recursos, publicación de eventos y contextos específicos en función del tipo de aplicación.</p>
+<ul>
+  <li>Un BeanFactory
+  <ul>
+    <li>Instancia y alambra los beans</li>
+  </ul></li>
+  <li>Un ApplicationContext
+  <ul>
+    <li>Instancia y alambra los beans</li>
+    <li>Hace un registro automático con <code>BeanPostProcessor</code></li>
+    <li>Hace un registro automático del <code>BeanFactoryPostProcessor</code></li>
+    <li>Habilita el acceso conveniente al <code>MessageSource</code></li>
+    <li>Hace la publicación del <code>ApplicationEvent</code></li>
+  </ul></li>
+</ul>
+<div class="row">
+  <div class="col-md-12">
+    <h4><i class="icon-code"></i> Usando el BeanFactory</h4>
+    <script type="syntaxhighlighter" class="brush: java"><![CDATA[
+      XmlBeanFactory factory = new XmlBeanFactory(new FileSystemResource("beans.xml"));
+      MyBeanPostProcessor postProcessor = new MyBeanPostProcessor();
+      factory.addBeanPostProcessor(postProcessor);
+      PropertyPlaceholderConfigurer cfg = new PropertyPlaceholderConfigurer();
+      cfg.setLocation(new FileSystemResource("jdbc.properties"));
+      cfg.postProcessBeanFactory(factory);
+    ]]></script>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <h4><i class="icon-code"></i> Archivo base de configuración: appctx.xml</h4>
+    <script type="syntaxhighlighter" class="brush: xml"><![CDATA[
+    <?xml version="1.0" encoding="UTF-8"?>
+      <beans xmlns="http://www.springframework.org/schema/beans"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.springframework.org/schema/beans
+      http://www.springframework.org/schema/beans/spring-beans.xsd">
+        <bean id="..." class="...">
+          <!-- colaboradores y configuraciones de este bean -->
+        </bean>
+    </beans>
+    ]]></script>
+  </div>
+</div><h2>Inyección de Dependencias entre beans con elementos transversales.</h2><h2>El contenedor de beans de Spring</h2><p><img src="img/spring-container.png" alt="Alt spring-container"/></p>
+<hr/><h2>Componentes funcionales y no funcionales</h2><p><img src="img/di.png" alt="Alt di"/></p>
+<hr/><h2> Cross cutting concerns</h2><p><img src="img/cross-concern.png" alt="Alt cross-concern"/></p>
+<hr/><h2>Ciclo de vida de los beans</h2>
+<blockquote>
+  <p>
+    Un bean es un objeto que es instanciado, ensamblado, y de alguna manera administrado por el contenedor de Spring.
+  </p>
+</blockquote><p>En una aplicación basada en Spring, los objetos de la aplicación vivirán dentro del contenedor de IoC, este último los creará y ellos se alambrarán, se configurarán y el mismo contenedor los administrará.</p><p><img src="img/container-magic.png" alt="Alt container-magic"/></p><p>El contenedor es la parte central de SpringFramework, el cual, usa inyección de dependencias para administrar los componentes de la aplicación. Esto incluye la creación de asociaciones entre componentes colaboradores.</p><p>En una aplicación Java tradicional el ciclo de vida de un bean es simple, la palabra reservada <code>new</code> es usada para instanciarlo y con eso esta listo para usarse. Una vez que ya no se usa más, entonces es candidato para que el Garbage Collector pase por él. En contraste, el ciclo de vida de un bean dentro del contenedor de Spring es más elaborado. Como se pudo apreciar anteriormente, el <code>BeanFactory</code> ejecuta varias pasos antes de enlistar un bean, y sumado con lo que hace el <code>ApplicationContext</code> podemos enlistar las siguientes:</p>
+<ol>
+  <li>Spring instancia el bean</li>
+  <li>Spring inyecta valores y referencias de beans en sus propiedades.</li>
+  <li>Si el bean implementa <code>BeanNameAware</code>, Spring pasa el ID del bean al método <code>setBeanName()</code>.</li>
+  <li>Si el bean implementa <code>BeanFactoryAware</code>, Spring llama al método <code>setBeanFactory()</code>, pasando el bean a dicho factory.</li>
+  <li>Si el bean implementa <code>ApplicationContextAware</code>, Spring llama el método <code>setApplicationContext()</code>, pasando la referencia a dicho AppCtx dentro del bean.</li>
+  <li>Si cualquiera de los beans implementa la interface <code>BeanPostProcessor</code>, Spring llama a su método <code>postProcessBeforeInitialization()</code>.</li>
+  <li>Si cualquiera de los beans implementa la interfaz <code>InitializingBean</code>, Spring llama a su método <code>agterPropertiesSet()</code>. Similarmente, si el bean fue declarado con un <em>init-method</em>, entonces dicho método es llamado.</li>
+  <li>Si existen beans que implementan <code>BeanPostProcessor</code>, Soring llmará a su método <code>postProcessAfterInitialization()</code>.</li>
+  <li>En este punto, el bean esta listo para ser usado por la aplicación y permanecerá en el contexto de la aplicación hasta que dicho contexto sea destruido.</li>
+  <li>Si cualquier bean implementa la interfaz <code>DisposableBean</code>, entonces Spring llamará a su método <code>destroy()</code>. De otra forma, si cualquier bean fue declarado con un <em>destroy-method</em>, entonces dicho método será llamado.</li>
+</ol><h2>Caso de estudio</h2><p>Nuestro ejemplo estará basado en un tablero de tareas(Taskboard), el cual esta asignado a algun proyecto que a su vez tiene varias historias de usuario, dichas historias serán pobladas por las tareas. Todo este conjunto nos dará como resultado un tablero que potencialmente podrá ser visualizado en un front-end.</p>
+<div class="row">
+  <div class="col-md-4">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Creación de proyectos</h3>
+      </div>
+      <div class="panel-body">
+        <b>Como</b> product owner<br/>
+        <b>Deseo</b> administrar proyectos<br/>
+        <b>De tal manera que</b> pueda crearlos y visualizarlos
+        <hr>
+        Criterios de aceptación:
+        <ul>
+          <li>El proyecto debe tener un identificador único</li>
+          <li>El identificador de proyecto de estar en mayúsculas y sin espacios</li>
+          <li>Debe de tener una descripción</li>
+          <li>Esta formado de varias historias de usuario</li>
+          <li>Se deberá calcular el esfuerzo total del proyecto</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Agregar historias de usuario</h3>
+      </div>
+      <div class="panel-body">
+        <b>Como</b> product owner<br/>
+        <b>Deseo</b> agregar la descripción de una funcionalidad<br/>
+        <b>De tal manera que</b> pueda identificarla como una historia de usuario
+        <hr>
+        Criterios de aceptación:
+        <ul>
+          <li>Debe de tener el esfuerzo necesario en puntos</li>
+          <li>Debe tener una prioridad</li>
+          <li>Dos historias de usuario no pueden tener la misma prioridad</li>
+          <li>Debe tener una descripción</li>
+          <li>Es posible asignarle varias tareas</li>
+          <li>Cuando todas sus tareas están terminadas entonces se considera hecho</li>
+          <li>Se puede repriorizar una historia de usuario.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Crear tareas</h3>
+      </div>
+      <div class="panel-body">
+        <b>Como</b> miembro del equipo<br/>
+        <b>Deseo</b> agregar tareas<br/>
+        <b>De tal manera que</b> puedan ser parte de una historia de usuario
+        <hr>
+        Criterios de aceptación:
+        <ul>
+          <li>Las tareas pueden tener tres estados: TODO, WIP y DONE</li>
+          <li>Una tarea puede estar asignada a varios usuarios</li>
+          <li>Tienen una descripción</li>
+          <li>Pueden cambiar de estado</li>
+          <li>Un usuario sólo puede tener una tarea en WIP</li>
+          <li>Cuando se crea una tarea debe de tener el estado TODO.</li>
+          <li>Sólo se pueden asignar tareas a usuarios dentro del proyecto.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Agregar miembros al equipo</h3>
+      </div>
+      <div class="panel-body">
+        <b>Como</b> miembro del equipo<br/>
+        <b>Deseo</b> unirme al equipo<br/>
+        <b>De tal manera que</b> agregar tareas y colaborar en un proyecto
+        <hr>
+        Criterios de aceptación:
+        <ul>
+          <li>Los nombres de usuario deben ser únicos</li>
+          <li>El nombre de usuario debe tener la forma de un correo</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Visualizar un tablero de tareas</h3>
+      </div>
+      <div class="panel-body">
+        <b>Como</b> miembro del equipo<br/>
+        <b>Deseo</b> un tablero con las tareas de una proyecto<br/>
+        <b>De tal manera que</b> pueda visualizar el estado actual del proyecto
+        <hr>
+        Criterios de aceptación:
+        <ul>
+          <li>Debe de tener 3 líneas</li>
+          <li>Las tareas deben mostrar el nombre de los participantes</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Tu propia historia...</h3>
+      </div>
+      <div class="panel-body">
+        <b>Como</b> un usuario<br/>
+        <b>Deseo</b> hacer algo<br/>
+        <b>De tal manera que</b> me aporte valor
+        <hr>
+        Criterios de aceptación:
+        <ul>
+          <li>Satisfacción</li>
+          <li>Validación</li>
+          <li>Restricción</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+<hr/><h2>Estructura de las clases de dominio</h2>
+<div class="row">
+  <div class="col-md-4">
+    <h4><i class="icon-file"></i> Project.java</h4>
+    <script type="syntaxhighlighter" class="brush: java"><![CDATA[
+package com.makingdevs.container;
+
+import java.util.Date;
+import java.util.List;
+
+public class Project {
+  private Long id;
+  private String name;
+  private String codeName;
+  private String description;
+  private Date dateCreated;
+  private Date lastUpdated;
+  
+  private List<UserStory> userStories;
+  private List<User> participants;
+  
+  // Getters y Setters
+  // Constructores
+}
+    ]]></script>
+  </div>
+  <div class="col-md-4">
+    <h4><i class="icon-file"></i> UserStory.java</h4>
+    <script type="syntaxhighlighter" class="brush: java"><![CDATA[
+package com.makingdevs.container;
+
+import java.util.Date;
+import java.util.List;
+
+public class UserStory {
+  private Long id;
+  private String description;
+  private Integer priority;
+  private Integer effort;
+  private Date dateCreated;
+  private Date lastUpdated;
+  
+  private Project project;
+  private List<Task> tasks;
+  // Getters y Setters
+  // Constructores
+}
+    ]]></script>
+  </div>
+  <div class="col-md-4">
+    <h4><i class="icon-file"></i> Task.java</h4>
+    <script type="syntaxhighlighter" class="brush: java"><![CDATA[
+package com.makingdevs.container;
+
+import java.util.Date;
+import java.util.List;
+
+public class Task {
+  private Long id;
+  private String description;
+  private TaskStatus status;
+  private Date dateCreated;
+  private Date lastUpdated;
+  
+  private UserStory userStory;
+  private List<User> participants;
+  // Getters y Setters
+  // Constructores
+}
+    ]]></script>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <h4><i class="icon-file"></i> TaskStatus.java</h4>
+    <script type="syntaxhighlighter" class="brush: java"><![CDATA[
+package com.makingdevs.container;
+
+public enum TaskStatus {
+  TODO,WIP,DONE;
+}
+    ]]></script>
+  </div>
+  <div class="col-md-6">
+    <h4><i class="icon-file"></i> User.java</h4>
+    <script type="syntaxhighlighter" class="brush: java"><![CDATA[
+package com.makingdevs.container;
+
+import java.util.Date;
+
+public class User {
+  private Long id;
+  private String username;
+  private Date dateCreated;
+  private Date lastUpdated;
+  // Getters y Setters
+  // Constructores
+}
+    ]]></script>
+  </div>
+</div>
+<hr/><h2>Funcionalidad que deseamos implementar a nivel de interfaces</h2>
+<div class="row">
+  <div class="col-md-6">
+    <h4><i class="icon-file"></i> ProjectService.java</h4>
+    <script type="syntaxhighlighter" class="brush: java"><![CDATA[
+package com.makingdevs.container;
+
+public interface ProjectService {
+  void createNewProject(Project project);
+  Project findProjectByCodeName(String codeName);
+  Integer totalEffortForProject(String codeName);
+}
+    ]]></script>
+  </div>
+  <div class="col-md-6">
+    <h4><i class="icon-file"></i> UserStoryService.java</h4>
+    <script type="syntaxhighlighter" class="brush: java"><![CDATA[
+package com.makingdevs.container;
+
+import java.util.List;
+
+public interface UserStoryService {
+  void createUserStory(UserStory userStory);
+  List<UserStory> findUserStoriesByProject(String codeName);
+  boolean isUserStoryDone(Long userStoryId);
+  UserStory findUserStoryByIdentifier(Long userStoryId);
+}
+    ]]></script>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <h4><i class="icon-file"></i> TaskService.java</h4>
+    <script type="syntaxhighlighter" class="brush: java"><![CDATA[
+package com.makingdevs.container;
+
+public interface TaskService {
+  Task createTaskForUserStory(String taskDescription, Long userStoryId);
+  void assignTaskToUser(Long taskId, String username);
+  void changeTaskStatus(Long taskId, TaskStatus taskStatus);
+}
+    ]]></script>
+  </div>
+  <div class="col-md-6">
+    <h4><i class="icon-file"></i> UserService.java</h4>
+    <script type="syntaxhighlighter" class="brush: java"><![CDATA[
+package com.makingdevs.container;
+
+public interface UserService {
+  User findUserByUsername(String username);
+  User createUser(String username);
+  void addToProject(String username, String codeName);
+}
+    ]]></script>
+  </div>
+</div>
+<div class="bs-callout bs-callout-info">
+<h4><i class="icon-coffee"></i> Información de utilidad</h4>
+  <p>
+    Aunque esta es la funcionalidad de negocio que deseamos implementar, debes recordar que aún necesitarás otros componentes que te permitan almacenar los datos de la estructura; tales componentes podrían implementarse con acceso a datos(relacionales o no relacionales) y sus respectivas abstracciones.
+  </a>
+  </p>
+</div>
+    </div>
+  </div><!-- /.container -->
+
+  <footer id="footer" class="footer">
+    <div class="container">
+      <p class="credit text-muted">Powered by <a href="http://makingdevs.com">MakingDevs.com</a>.</p>
+    </div>
+  </footer>
+
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/shCore.js"></script>
+  <script type="text/javascript" src="js/shBrushJScript.js"></script>
+  <script type="text/javascript" src="js/shBrushGroovy.js"></script>
+  <script type="text/javascript" src="js/shBrushCss.js"></script>
+  <script type="text/javascript" src="js/shBrushJava.js"></script>
+  <script type="text/javascript" src="js/shBrushPlain.js"></script>
+  <script type="text/javascript" src="js/shBrushSql.js"></script>
+  <script type="text/javascript" src="js/shBrushXml.js"></script>
+  <script type="text/javascript" src="js/shBrushBash.js"></script>
+  <script type="text/javascript" src="js/shBrushPython.js"></script>
+  <link type="text/css" rel="stylesheet" href="css/shCoreDefault.css"/>
+  <script type="text/javascript">SyntaxHighlighter.all();</script>  
+  <script src="js/funciones.js"></script>
+</body>
+</html>
