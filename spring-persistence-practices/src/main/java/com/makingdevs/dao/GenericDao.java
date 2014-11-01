@@ -7,7 +7,7 @@ import java.util.List;
 public interface GenericDao<T, PK extends Serializable> {
 
   /** Persist the newInstance object into database */
-  void create(T newInstance);
+  Long create(T newInstance);
 
   /**
    * Retrieve an object that was previously persisted to the database using the

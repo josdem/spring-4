@@ -17,27 +17,24 @@
     <jdbc:script location="com/makingdevs/scripts/constraints.sql"/>
   </jdbc:embedded-database>
   
-  <!-- 
   <util:properties id="dbProperties" location="classpath:/com/makingdevs/practica1/db.properties" />
-  -->
   
-  <!--
-  <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+  
+  <!--  bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
     <property name="username" value="#{dbProperties['mainDataSource.username']}"/>
     <property name="password" value="#{dbProperties['mainDataSource.password']}"/>
     <property name="url" value="#{dbProperties['mainDataSource.url']}"/>
     <property name="driverClassName" value="#{dbProperties['mainDataSource.driverClassName']}"/>
-  </bean>
-  -->
+  </bean-->
   
-  <!-- 
+  <!--  
   <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
     <property name="user" value="#{dbProperties['mainDataSource.username']}"/>
     <property name="password" value="#{dbProperties['mainDataSource.password']}"/>
     <property name="jdbcUrl" value="#{dbProperties['mainDataSource.url']}"/>
     <property name="driverClass" value="#{dbProperties['mainDataSource.driverClassName']}"/>
   </bean>
-  -->
+   -->
   
   <!--
   <jee:jndi-lookup jndi-name="jdbc/MyDataSource" id="dataSource"/>
