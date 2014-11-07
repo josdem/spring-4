@@ -31,6 +31,7 @@ public class HibernateAppCtxTests {
   }
 
   @Test
+  @SuppressWarnings("unchecked")
   public void test1Session() {
     Session session = sessionFactory.openSession();
     org.springframework.util.Assert.notNull(session);
@@ -41,6 +42,7 @@ public class HibernateAppCtxTests {
       System.out.println("project Description: " + project.getDescription());
     }
     transaction.commit();
+    session.close();
   }
 
 }
