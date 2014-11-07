@@ -1,5 +1,8 @@
 package com.makingdevs.practica7;
 
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotEquals;
+import static org.junit.Assert.assertNull;
 import static org.springframework.util.Assert.notNull;
 
 import java.util.Date;
@@ -14,15 +17,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.util.Assert;
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotEquals;
-import static org.junit.Assert.assertNull;
 
 import com.makingdevs.dao.ProjectDao;
 import com.makingdevs.model.Project;
 
 @RunWith(SpringJUnit4ClassRunner.class)
-@ContextConfiguration(locations = { "HibernateAppCtx.xml" })
+@ContextConfiguration(classes = { HibernateConfiguration.class })
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class ProjectDaoHibernateImplTests {
 
