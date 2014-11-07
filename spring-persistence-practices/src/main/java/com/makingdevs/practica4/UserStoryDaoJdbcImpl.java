@@ -7,13 +7,11 @@ import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.support.JdbcDaoSupport;
-import org.springframework.stereotype.Repository;
 
 import com.makingdevs.dao.UserStoryDao;
 import com.makingdevs.model.Project;
 import com.makingdevs.model.UserStory;
 
-@Repository
 public class UserStoryDaoJdbcImpl extends JdbcDaoSupport implements UserStoryDao {
 
   @Autowired
