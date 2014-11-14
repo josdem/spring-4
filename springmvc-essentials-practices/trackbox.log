@@ -1,0 +1,1508 @@
+0    [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+230868 [1293756425@qtp-1713192791-0] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - preHandle()
+230869 [1293756425@qtp-1713192791-0] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/ HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+
+
+230869 [1293756425@qtp-1713192791-0] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+
+
+230869 [1293756425@qtp-1713192791-0] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - org.springframework.web.servlet.mvc.ParameterizableViewController@2b660aa8
+230871 [1293756425@qtp-1713192791-0] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - postHandle()
+230871 [1293756425@qtp-1713192791-0] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/ HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+
+
+230872 [1293756425@qtp-1713192791-0] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+
+
+230872 [1293756425@qtp-1713192791-0] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - org.springframework.web.servlet.mvc.ParameterizableViewController@2b660aa8
+230872 [1293756425@qtp-1713192791-0] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - ModelAndView: reference to view with name 'home'; model is null
+232841 [1293756425@qtp-1713192791-0] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - afterCompletion()
+232841 [1293756425@qtp-1713192791-0] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/ HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+
+
+232841 [1293756425@qtp-1713192791-0] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+Content-Language: es
+Content-Type: text/html; charset=utf-8
+Expires: Thu, 01-Jan-1970 00:00:00 GMT
+Set-Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m;Path=/trackbox
+
+
+232841 [1293756425@qtp-1713192791-0] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - org.springframework.web.servlet.mvc.ParameterizableViewController@2b660aa8
+232841 [1293756425@qtp-1713192791-0] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - 
+237471 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - preHandle()
+237472 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/error HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Referer: http://localhost:8080/trackbox/
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+237472 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+
+
+237472 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public void com.makingdevs.practica13.ErrorController.throwError()
+237723 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - afterCompletion()
+237723 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/error HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Referer: http://localhost:8080/trackbox/
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+237723 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+Content-Language: es
+Content-Type: text/html; charset=utf-8
+
+
+237723 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public void com.makingdevs.practica13.ErrorController.throwError()
+237724 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - 
+240135 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - preHandle()
+240135 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/fileUpload HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Referer: http://localhost:8080/trackbox/
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+240135 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+
+
+240135 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public void com.makingdevs.practica11.FileUploadController.showFileUploadForm()
+240139 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - postHandle()
+240140 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/fileUpload HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Referer: http://localhost:8080/trackbox/
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+240140 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+
+
+240140 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public void com.makingdevs.practica11.FileUploadController.showFileUploadForm()
+240140 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - ModelAndView: reference to view with name 'fileUpload'; model is {}
+240217 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - afterCompletion()
+240217 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/fileUpload HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Referer: http://localhost:8080/trackbox/
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+240217 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+Content-Language: es
+Content-Type: text/html; charset=utf-8
+
+
+240217 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public void com.makingdevs.practica11.FileUploadController.showFileUploadForm()
+240217 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - 
+242930 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - preHandle()
+242930 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/sprint/new HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Referer: http://localhost:8080/trackbox/
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+242930 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+
+
+242931 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica9.SprintModelAttributeController.crearSprint(org.springframework.ui.ModelMap)
+242933 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica9.SprintModelAttributeController  - Obtaining projects
+243374 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - postHandle()
+243374 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/sprint/new HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Referer: http://localhost:8080/trackbox/
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+243374 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+
+
+243374 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica9.SprintModelAttributeController.crearSprint(org.springframework.ui.ModelMap)
+243374 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - ModelAndView: reference to view with name 'sprint/new'; model is {projectList=[Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366], Project [id=2, name=The Vim Challenges, codeName=VIMCHALLENGES, description=Aplicacion para desafiar a tus amigos con VIM, dateCreated=2014-02-12 13:32:27.509, lastUpdated=2014-02-12 13:32:27.509], Project [id=3, name=Desarrollo Web con Spring, codeName=SPRING-WEB, description=Todos los temas de desarrollo web con Spring, dateCreated=2014-02-12 13:33:17.968, lastUpdated=2014-02-12 13:33:17.968], Project [id=4, name=My über taskboard, codeName=AGILE-TASKBOARD, description=Un tablero de control de proyectos con historias de usuario y tareas, dateCreated=2014-02-12 13:37:09.803, lastUpdated=2014-02-12 13:37:09.803]], sprintCommand=com.makingdevs.practica8.SprintCommand@ae9c517, org.springframework.validation.BindingResult.sprintCommand=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+243764 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - afterCompletion()
+243764 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/sprint/new HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Referer: http://localhost:8080/trackbox/
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+243764 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+Content-Language: es
+Content-Type: text/html; charset=utf-8
+
+
+243764 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica9.SprintModelAttributeController.crearSprint(org.springframework.ui.ModelMap)
+243765 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - 
+260110 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - preHandle()
+260110 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Referer: http://localhost:8080/trackbox/
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+260110 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+
+
+260110 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica6.ProjectValidationController.allProjects(org.springframework.ui.Model)
+260117 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - postHandle()
+260117 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Referer: http://localhost:8080/trackbox/
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+260117 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+
+
+260117 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica6.ProjectValidationController.allProjects(org.springframework.ui.Model)
+260117 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - ModelAndView: reference to view with name 'project/list'; model is {message=Welcome to projects manager!, projects=[Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366], Project [id=2, name=The Vim Challenges, codeName=VIMCHALLENGES, description=Aplicacion para desafiar a tus amigos con VIM, dateCreated=2014-02-12 13:32:27.509, lastUpdated=2014-02-12 13:32:27.509], Project [id=3, name=Desarrollo Web con Spring, codeName=SPRING-WEB, description=Todos los temas de desarrollo web con Spring, dateCreated=2014-02-12 13:33:17.968, lastUpdated=2014-02-12 13:33:17.968], Project [id=4, name=My über taskboard, codeName=AGILE-TASKBOARD, description=Un tablero de control de proyectos con historias de usuario y tareas, dateCreated=2014-02-12 13:37:09.803, lastUpdated=2014-02-12 13:37:09.803]]}
+260262 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - afterCompletion()
+260262 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Referer: http://localhost:8080/trackbox/
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+260262 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+Content-Language: es
+Content-Type: text/html; charset=utf-8
+
+
+260262 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica6.ProjectValidationController.allProjects(org.springframework.ui.Model)
+260262 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - 
+263100 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - preHandle()
+263100 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Referer: http://localhost:8080/trackbox/project
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+263100 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+
+
+263100 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica7.UserStoryController.userStoriesForProject(java.lang.String,org.springframework.ui.Model)
+263192 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - postHandle()
+263192 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Referer: http://localhost:8080/trackbox/project
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+263192 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+
+
+263192 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica7.UserStoryController.userStoriesForProject(java.lang.String,org.springframework.ui.Model)
+263192 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - ModelAndView: reference to view with name 'userStory/project'; model is {project=Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366], userStories=[UserStory [id=1, description=Como usuario Quiero emitir facturas De tal manera que pueda entregarlas en XML y PDF, priority=1, effort=5, dateCreated=2014-02-12 13:34:19.591, lastUpdated=2014-02-12 13:34:19.591, project=Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366]], UserStory [id=2, description=Como usuario de finanzas Quiero un estado financiero De tal manera que pueda ver la facturación mensual, priority=2, effort=3, dateCreated=2014-02-12 13:34:55.822, lastUpdated=2014-02-12 13:34:55.822, project=Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366]]], org.springframework.validation.BindingResult.project=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+263295 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - afterCompletion()
+263295 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Referer: http://localhost:8080/trackbox/project
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+263295 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+Content-Language: es
+Content-Type: text/html; charset=utf-8
+
+
+263296 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica7.UserStoryController.userStoriesForProject(java.lang.String,org.springframework.ui.Model)
+263296 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - 
+264544 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - preHandle()
+264544 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories/1/task HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+264544 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+
+
+264544 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(org.springframework.ui.ModelMap)
+264563 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - postHandle()
+264563 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories/1/task HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+264563 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Pragma: no-cache
+Cache-Control: no-cache
+Cache-Control: no-store
+
+
+264563 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(org.springframework.ui.ModelMap)
+264563 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - ModelAndView: reference to view with name 'task/new'; model is {project=Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366], userStory=UserStory [id=1, description=Como usuario Quiero emitir facturas De tal manera que pueda entregarlas en XML y PDF, priority=1, effort=5, dateCreated=2014-02-12 13:34:19.591, lastUpdated=2014-02-12 13:34:19.591, project=Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366]], taskStatusList=[Lcom.makingdevs.model.TaskStatus;@69de238, tasks=[], task=Task [id=null, description=null, status=null, dateCreated=null, lastUpdated=null, userStory=null], org.springframework.validation.BindingResult.project=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.userStory=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.tasks=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.task=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+264714 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - afterCompletion()
+264714 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories/1/task HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+264714 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+Content-Language: es
+Content-Type: text/html; charset=utf-8
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Pragma: no-cache
+Cache-Control: no-cache
+Cache-Control: no-store
+
+
+264715 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(org.springframework.ui.ModelMap)
+264715 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - 
+277602 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - preHandle()
+277602 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories/1/saveTasks HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+277602 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+
+
+277602 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public org.springframework.web.servlet.ModelAndView com.makingdevs.practica10.TaskController.createTasksForThisUserStory(com.makingdevs.model.Project,org.springframework.web.bind.support.SessionStatus)
+277617 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - postHandle()
+277617 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories/1/saveTasks HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+277617 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Pragma: no-cache
+Cache-Control: no-cache
+Cache-Control: no-store
+
+
+277617 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public org.springframework.web.servlet.ModelAndView com.makingdevs.practica10.TaskController.createTasksForThisUserStory(com.makingdevs.model.Project,org.springframework.web.bind.support.SessionStatus)
+277618 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - ModelAndView: reference to view with name 'redirect:/project/FACTURANOT/userStories'; model is {tasks=[], userStory=UserStory [id=1, description=Como usuario Quiero emitir facturas De tal manera que pueda entregarlas en XML y PDF, priority=1, effort=5, dateCreated=2014-02-12 13:34:19.591, lastUpdated=2014-02-12 13:34:19.591, project=Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366]], taskStatusList=[Lcom.makingdevs.model.TaskStatus;@69fb19a9, project=Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366], org.springframework.validation.BindingResult.project=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.tasks=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.userStory=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+277645 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - afterCompletion()
+277645 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories/1/saveTasks HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+277645 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 302 
+Location: http://localhost:8080/trackbox/project/FACTURANOT/userStories?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE
+Content-Language: es
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Pragma: no-cache
+Cache-Control: no-cache
+Cache-Control: no-store
+
+
+277645 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public org.springframework.web.servlet.ModelAndView com.makingdevs.practica10.TaskController.createTasksForThisUserStory(com.makingdevs.model.Project,org.springframework.web.bind.support.SessionStatus)
+277645 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - 
+277648 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - preHandle()
+277648 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+277648 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+
+
+277648 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica7.UserStoryController.userStoriesForProject(java.lang.String,org.springframework.ui.Model)
+277659 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - postHandle()
+277659 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+277659 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+
+
+277659 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica7.UserStoryController.userStoriesForProject(java.lang.String,org.springframework.ui.Model)
+277660 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - ModelAndView: reference to view with name 'userStory/project'; model is {project=Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366], userStories=[UserStory [id=1, description=Como usuario Quiero emitir facturas De tal manera que pueda entregarlas en XML y PDF, priority=1, effort=5, dateCreated=2014-02-12 13:34:19.591, lastUpdated=2014-02-12 13:34:19.591, project=Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366]], UserStory [id=2, description=Como usuario de finanzas Quiero un estado financiero De tal manera que pueda ver la facturación mensual, priority=2, effort=3, dateCreated=2014-02-12 13:34:55.822, lastUpdated=2014-02-12 13:34:55.822, project=Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366]]], org.springframework.validation.BindingResult.project=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+277662 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - afterCompletion()
+277662 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+277662 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+Content-Language: es
+Content-Type: text/html; charset=utf-8
+
+
+277662 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica7.UserStoryController.userStoriesForProject(java.lang.String,org.springframework.ui.Model)
+277662 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - 
+284658 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - preHandle()
+284658 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories/1/task HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+284658 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+
+
+284658 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(org.springframework.ui.ModelMap)
+284666 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - postHandle()
+284667 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories/1/task HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+284667 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Pragma: no-cache
+Cache-Control: no-cache
+Cache-Control: no-store
+
+
+284667 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(org.springframework.ui.ModelMap)
+284667 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - ModelAndView: reference to view with name 'task/new'; model is {project=Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366], userStory=UserStory [id=1, description=Como usuario Quiero emitir facturas De tal manera que pueda entregarlas en XML y PDF, priority=1, effort=5, dateCreated=2014-02-12 13:34:19.591, lastUpdated=2014-02-12 13:34:19.591, project=Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366]], taskStatusList=[Lcom.makingdevs.model.TaskStatus;@7ab1428f, tasks=[], task=Task [id=null, description=null, status=null, dateCreated=null, lastUpdated=null, userStory=null], org.springframework.validation.BindingResult.project=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.userStory=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.tasks=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.task=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+284670 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - afterCompletion()
+284670 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories/1/task HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+284670 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+Content-Language: es
+Content-Type: text/html; charset=utf-8
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Pragma: no-cache
+Cache-Control: no-cache
+Cache-Control: no-store
+
+
+284670 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(org.springframework.ui.ModelMap)
+284670 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - 
+328032 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - preHandle()
+328032 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - POST /trackbox/project/FACTURANOT/userStories/1/task HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Content-Length: 31
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Origin: http://localhost:8080
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+328032 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+
+
+328032 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(java.util.Vector<com.makingdevs.model.Task>,com.makingdevs.model.Task,org.springframework.validation.BindingResult)
+328069 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - postHandle()
+328069 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - POST /trackbox/project/FACTURANOT/userStories/1/task HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Content-Length: 31
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Origin: http://localhost:8080
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+328069 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+Pragma: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: no-cache
+Cache-Control: no-store
+
+
+328069 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(java.util.Vector<com.makingdevs.model.Task>,com.makingdevs.model.Task,org.springframework.validation.BindingResult)
+328069 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - ModelAndView: reference to view with name 'redirect:task'; model is {project=Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366], userStory=UserStory [id=1, description=Como usuario Quiero emitir facturas De tal manera que pueda entregarlas en XML y PDF, priority=1, effort=5, dateCreated=2014-02-12 13:34:19.591, lastUpdated=2014-02-12 13:34:19.591, project=Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366]], taskStatusList=[Lcom.makingdevs.model.TaskStatus;@2c0f648c, tasks=[Task [id=null, description=dnskndj, status=TODO, dateCreated=null, lastUpdated=null, userStory=null]], org.springframework.validation.BindingResult.tasks=org.springframework.validation.BeanPropertyBindingResult: 0 errors, task=Task [id=null, description=dnskndj, status=TODO, dateCreated=null, lastUpdated=null, userStory=null], org.springframework.validation.BindingResult.task=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.project=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.userStory=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+328070 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - afterCompletion()
+328070 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - POST /trackbox/project/FACTURANOT/userStories/1/task HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Content-Length: 31
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Origin: http://localhost:8080
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+328070 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 302 
+Pragma: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: no-cache
+Cache-Control: no-store
+Content-Language: es
+Location: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE
+
+
+328070 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(java.util.Vector<com.makingdevs.model.Task>,com.makingdevs.model.Task,org.springframework.validation.BindingResult)
+328070 [939950806@qtp-1713192791-3] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - 
+328091 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - preHandle()
+328091 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+328091 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+
+
+328091 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(org.springframework.ui.ModelMap)
+328098 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - postHandle()
+328099 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+328099 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+Pragma: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: no-cache
+Cache-Control: no-store
+
+
+328099 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(org.springframework.ui.ModelMap)
+328099 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - ModelAndView: reference to view with name 'task/new'; model is {tasks=[Task [id=null, description=dnskndj, status=TODO, dateCreated=null, lastUpdated=null, userStory=null]], project=Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366], userStory=UserStory [id=1, description=Como usuario Quiero emitir facturas De tal manera que pueda entregarlas en XML y PDF, priority=1, effort=5, dateCreated=2014-02-12 13:34:19.591, lastUpdated=2014-02-12 13:34:19.591, project=Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366]], taskStatusList=[Lcom.makingdevs.model.TaskStatus;@5cb2b6ba, task=Task [id=null, description=null, status=null, dateCreated=null, lastUpdated=null, userStory=null], org.springframework.validation.BindingResult.tasks=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.project=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.userStory=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.task=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+328111 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - afterCompletion()
+328111 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+328111 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+Pragma: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: no-cache
+Cache-Control: no-store
+Content-Language: es
+Content-Type: text/html; charset=utf-8
+
+
+328111 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(org.springframework.ui.ModelMap)
+328112 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - 
+330408 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - preHandle()
+330408 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - POST /trackbox/project/FACTURANOT/userStories/1/task HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Content-Length: 28
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Origin: http://localhost:8080
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+330409 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+
+
+330409 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(java.util.Vector<com.makingdevs.model.Task>,com.makingdevs.model.Task,org.springframework.validation.BindingResult)
+330422 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - postHandle()
+330422 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - POST /trackbox/project/FACTURANOT/userStories/1/task HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Content-Length: 28
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Origin: http://localhost:8080
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+330422 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+Pragma: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: no-cache
+Cache-Control: no-store
+
+
+330422 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(java.util.Vector<com.makingdevs.model.Task>,com.makingdevs.model.Task,org.springframework.validation.BindingResult)
+330422 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - ModelAndView: reference to view with name 'redirect:task'; model is {project=Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366], userStory=UserStory [id=1, description=Como usuario Quiero emitir facturas De tal manera que pueda entregarlas en XML y PDF, priority=1, effort=5, dateCreated=2014-02-12 13:34:19.591, lastUpdated=2014-02-12 13:34:19.591, project=Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366]], taskStatusList=[Lcom.makingdevs.model.TaskStatus;@4743cef6, tasks=[Task [id=null, description=dnskndj, status=TODO, dateCreated=null, lastUpdated=null, userStory=null], Task [id=null, description=dsds, status=TODO, dateCreated=null, lastUpdated=null, userStory=null]], org.springframework.validation.BindingResult.tasks=org.springframework.validation.BeanPropertyBindingResult: 0 errors, task=Task [id=null, description=dsds, status=TODO, dateCreated=null, lastUpdated=null, userStory=null], org.springframework.validation.BindingResult.task=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.project=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.userStory=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+330423 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - afterCompletion()
+330423 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - POST /trackbox/project/FACTURANOT/userStories/1/task HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Content-Length: 28
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Origin: http://localhost:8080
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+330423 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 302 
+Pragma: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: no-cache
+Cache-Control: no-store
+Content-Language: es
+Location: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE
+
+
+330423 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(java.util.Vector<com.makingdevs.model.Task>,com.makingdevs.model.Task,org.springframework.validation.BindingResult)
+330423 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - 
+330430 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - preHandle()
+330431 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+330431 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+
+
+330431 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(org.springframework.ui.ModelMap)
+330439 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - postHandle()
+330439 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+330439 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+Pragma: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: no-cache
+Cache-Control: no-store
+
+
+330440 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(org.springframework.ui.ModelMap)
+330440 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - ModelAndView: reference to view with name 'task/new'; model is {tasks=[Task [id=null, description=dnskndj, status=TODO, dateCreated=null, lastUpdated=null, userStory=null], Task [id=null, description=dsds, status=TODO, dateCreated=null, lastUpdated=null, userStory=null]], project=Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366], userStory=UserStory [id=1, description=Como usuario Quiero emitir facturas De tal manera que pueda entregarlas en XML y PDF, priority=1, effort=5, dateCreated=2014-02-12 13:34:19.591, lastUpdated=2014-02-12 13:34:19.591, project=Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366]], taskStatusList=[Lcom.makingdevs.model.TaskStatus;@6cf0b039, task=Task [id=null, description=null, status=null, dateCreated=null, lastUpdated=null, userStory=null], org.springframework.validation.BindingResult.tasks=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.project=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.userStory=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.task=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+330445 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - afterCompletion()
+330445 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+330445 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+Pragma: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: no-cache
+Cache-Control: no-store
+Content-Language: es
+Content-Type: text/html; charset=utf-8
+
+
+330445 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(org.springframework.ui.ModelMap)
+330445 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - 
+332707 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - preHandle()
+332707 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - POST /trackbox/project/FACTURANOT/userStories/1/task HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Content-Length: 28
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Origin: http://localhost:8080
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+332707 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+
+
+332707 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(java.util.Vector<com.makingdevs.model.Task>,com.makingdevs.model.Task,org.springframework.validation.BindingResult)
+332718 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - postHandle()
+332718 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - POST /trackbox/project/FACTURANOT/userStories/1/task HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Content-Length: 28
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Origin: http://localhost:8080
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+332718 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+Pragma: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: no-cache
+Cache-Control: no-store
+
+
+332718 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(java.util.Vector<com.makingdevs.model.Task>,com.makingdevs.model.Task,org.springframework.validation.BindingResult)
+332718 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - ModelAndView: reference to view with name 'redirect:task'; model is {project=Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366], userStory=UserStory [id=1, description=Como usuario Quiero emitir facturas De tal manera que pueda entregarlas en XML y PDF, priority=1, effort=5, dateCreated=2014-02-12 13:34:19.591, lastUpdated=2014-02-12 13:34:19.591, project=Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366]], taskStatusList=[Lcom.makingdevs.model.TaskStatus;@2c240280, tasks=[Task [id=null, description=dnskndj, status=TODO, dateCreated=null, lastUpdated=null, userStory=null], Task [id=null, description=dsds, status=TODO, dateCreated=null, lastUpdated=null, userStory=null], Task [id=null, description=dsds, status=TODO, dateCreated=null, lastUpdated=null, userStory=null]], org.springframework.validation.BindingResult.tasks=org.springframework.validation.BeanPropertyBindingResult: 0 errors, task=Task [id=null, description=dsds, status=TODO, dateCreated=null, lastUpdated=null, userStory=null], org.springframework.validation.BindingResult.task=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.project=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.userStory=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+332720 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - afterCompletion()
+332720 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - POST /trackbox/project/FACTURANOT/userStories/1/task HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Content-Length: 28
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Origin: http://localhost:8080
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+332720 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 302 
+Pragma: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: no-cache
+Cache-Control: no-store
+Content-Language: es
+Location: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE
+
+
+332720 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(java.util.Vector<com.makingdevs.model.Task>,com.makingdevs.model.Task,org.springframework.validation.BindingResult)
+332720 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - 
+332724 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - preHandle()
+332724 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+332725 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+
+
+332725 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(org.springframework.ui.ModelMap)
+332734 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - postHandle()
+332734 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+332734 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+Pragma: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: no-cache
+Cache-Control: no-store
+
+
+332734 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(org.springframework.ui.ModelMap)
+332735 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - ModelAndView: reference to view with name 'task/new'; model is {tasks=[Task [id=null, description=dnskndj, status=TODO, dateCreated=null, lastUpdated=null, userStory=null], Task [id=null, description=dsds, status=TODO, dateCreated=null, lastUpdated=null, userStory=null], Task [id=null, description=dsds, status=TODO, dateCreated=null, lastUpdated=null, userStory=null]], project=Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366], userStory=UserStory [id=1, description=Como usuario Quiero emitir facturas De tal manera que pueda entregarlas en XML y PDF, priority=1, effort=5, dateCreated=2014-02-12 13:34:19.591, lastUpdated=2014-02-12 13:34:19.591, project=Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366]], taskStatusList=[Lcom.makingdevs.model.TaskStatus;@4b1bdd73, task=Task [id=null, description=null, status=null, dateCreated=null, lastUpdated=null, userStory=null], org.springframework.validation.BindingResult.tasks=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.project=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.userStory=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.task=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+332738 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - afterCompletion()
+332738 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+332738 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+Pragma: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: no-cache
+Cache-Control: no-store
+Content-Language: es
+Content-Type: text/html; charset=utf-8
+
+
+332738 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(org.springframework.ui.ModelMap)
+332738 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - 
+334983 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - preHandle()
+334983 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - POST /trackbox/project/FACTURANOT/userStories/1/task HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Content-Length: 29
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Origin: http://localhost:8080
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+334983 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+
+
+334983 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(java.util.Vector<com.makingdevs.model.Task>,com.makingdevs.model.Task,org.springframework.validation.BindingResult)
+334997 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - postHandle()
+334997 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - POST /trackbox/project/FACTURANOT/userStories/1/task HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Content-Length: 29
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Origin: http://localhost:8080
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+334997 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+Pragma: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: no-cache
+Cache-Control: no-store
+
+
+334997 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(java.util.Vector<com.makingdevs.model.Task>,com.makingdevs.model.Task,org.springframework.validation.BindingResult)
+334997 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - ModelAndView: reference to view with name 'redirect:task'; model is {project=Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366], userStory=UserStory [id=1, description=Como usuario Quiero emitir facturas De tal manera que pueda entregarlas en XML y PDF, priority=1, effort=5, dateCreated=2014-02-12 13:34:19.591, lastUpdated=2014-02-12 13:34:19.591, project=Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366]], taskStatusList=[Lcom.makingdevs.model.TaskStatus;@49780767, tasks=[Task [id=null, description=dnskndj, status=TODO, dateCreated=null, lastUpdated=null, userStory=null], Task [id=null, description=dsds, status=TODO, dateCreated=null, lastUpdated=null, userStory=null], Task [id=null, description=dsds, status=TODO, dateCreated=null, lastUpdated=null, userStory=null], Task [id=null, description=dsdsd, status=TODO, dateCreated=null, lastUpdated=null, userStory=null]], org.springframework.validation.BindingResult.tasks=org.springframework.validation.BeanPropertyBindingResult: 0 errors, task=Task [id=null, description=dsdsd, status=TODO, dateCreated=null, lastUpdated=null, userStory=null], org.springframework.validation.BindingResult.task=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.project=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.userStory=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+334998 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - afterCompletion()
+334999 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - POST /trackbox/project/FACTURANOT/userStories/1/task HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Content-Length: 29
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+Origin: http://localhost:8080
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Content-Type: application/x-www-form-urlencoded
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+334999 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 302 
+Pragma: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: no-cache
+Cache-Control: no-store
+Content-Language: es
+Location: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE
+
+
+334999 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(java.util.Vector<com.makingdevs.model.Task>,com.makingdevs.model.Task,org.springframework.validation.BindingResult)
+334999 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - 
+335007 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - preHandle()
+335007 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+335008 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+
+
+335008 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(org.springframework.ui.ModelMap)
+335021 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - postHandle()
+335021 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+335021 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+Pragma: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: no-cache
+Cache-Control: no-store
+
+
+335021 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(org.springframework.ui.ModelMap)
+335021 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - ModelAndView: reference to view with name 'task/new'; model is {tasks=[Task [id=null, description=dnskndj, status=TODO, dateCreated=null, lastUpdated=null, userStory=null], Task [id=null, description=dsds, status=TODO, dateCreated=null, lastUpdated=null, userStory=null], Task [id=null, description=dsds, status=TODO, dateCreated=null, lastUpdated=null, userStory=null], Task [id=null, description=dsdsd, status=TODO, dateCreated=null, lastUpdated=null, userStory=null]], project=Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366], userStory=UserStory [id=1, description=Como usuario Quiero emitir facturas De tal manera que pueda entregarlas en XML y PDF, priority=1, effort=5, dateCreated=2014-02-12 13:34:19.591, lastUpdated=2014-02-12 13:34:19.591, project=Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366]], taskStatusList=[Lcom.makingdevs.model.TaskStatus;@6d15987d, task=Task [id=null, description=null, status=null, dateCreated=null, lastUpdated=null, userStory=null], org.springframework.validation.BindingResult.tasks=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.project=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.userStory=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.task=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+335026 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - afterCompletion()
+335026 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Cache-Control: max-age=0
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+335026 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+Pragma: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: no-cache
+Cache-Control: no-store
+Content-Language: es
+Content-Type: text/html; charset=utf-8
+
+
+335026 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(org.springframework.ui.ModelMap)
+335027 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - 
+341727 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - preHandle()
+341727 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+341727 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+
+
+341727 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(org.springframework.ui.ModelMap)
+341737 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - postHandle()
+341737 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+341737 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+Pragma: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: no-cache
+Cache-Control: no-store
+
+
+341737 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(org.springframework.ui.ModelMap)
+341737 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - ModelAndView: reference to view with name 'task/new'; model is {tasks=[Task [id=null, description=dnskndj, status=TODO, dateCreated=null, lastUpdated=null, userStory=null], Task [id=null, description=dsds, status=TODO, dateCreated=null, lastUpdated=null, userStory=null], Task [id=null, description=dsds, status=TODO, dateCreated=null, lastUpdated=null, userStory=null], Task [id=null, description=dsdsd, status=TODO, dateCreated=null, lastUpdated=null, userStory=null]], project=Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366], userStory=UserStory [id=1, description=Como usuario Quiero emitir facturas De tal manera que pueda entregarlas en XML y PDF, priority=1, effort=5, dateCreated=2014-02-12 13:34:19.591, lastUpdated=2014-02-12 13:34:19.591, project=Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366]], taskStatusList=[Lcom.makingdevs.model.TaskStatus;@2d980058, task=Task [id=null, description=null, status=null, dateCreated=null, lastUpdated=null, userStory=null], org.springframework.validation.BindingResult.tasks=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.project=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.userStory=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.task=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+341743 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - afterCompletion()
+341743 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+341743 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+Pragma: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: no-cache
+Cache-Control: no-store
+Content-Language: es
+Content-Type: text/html; charset=utf-8
+
+
+341743 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(org.springframework.ui.ModelMap)
+341743 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - 
+342418 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - preHandle()
+342418 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+342418 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+
+
+342418 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(org.springframework.ui.ModelMap)
+342428 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - postHandle()
+342428 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+342428 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+Pragma: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: no-cache
+Cache-Control: no-store
+
+
+342428 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(org.springframework.ui.ModelMap)
+342428 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - ModelAndView: reference to view with name 'task/new'; model is {tasks=[Task [id=null, description=dnskndj, status=TODO, dateCreated=null, lastUpdated=null, userStory=null], Task [id=null, description=dsds, status=TODO, dateCreated=null, lastUpdated=null, userStory=null], Task [id=null, description=dsds, status=TODO, dateCreated=null, lastUpdated=null, userStory=null], Task [id=null, description=dsdsd, status=TODO, dateCreated=null, lastUpdated=null, userStory=null]], project=Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366], userStory=UserStory [id=1, description=Como usuario Quiero emitir facturas De tal manera que pueda entregarlas en XML y PDF, priority=1, effort=5, dateCreated=2014-02-12 13:34:19.591, lastUpdated=2014-02-12 13:34:19.591, project=Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366]], taskStatusList=[Lcom.makingdevs.model.TaskStatus;@171547f9, task=Task [id=null, description=null, status=null, dateCreated=null, lastUpdated=null, userStory=null], org.springframework.validation.BindingResult.tasks=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.project=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.userStory=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.task=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+342433 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - afterCompletion()
+342433 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories/1/task?taskStatusList=TODO&taskStatusList=WIP&taskStatusList=DONE
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+342433 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+Pragma: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: no-cache
+Cache-Control: no-store
+Content-Language: es
+Content-Type: text/html; charset=utf-8
+
+
+342434 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(org.springframework.ui.ModelMap)
+342434 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - 
+346679 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - preHandle()
+346679 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/ HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+346679 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+
+
+346679 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - org.springframework.web.servlet.mvc.ParameterizableViewController@2b660aa8
+346680 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - postHandle()
+346680 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/ HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+346680 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+
+
+346680 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - org.springframework.web.servlet.mvc.ParameterizableViewController@2b660aa8
+346680 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - ModelAndView: reference to view with name 'home'; model is null
+346682 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - afterCompletion()
+346682 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/ HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+346682 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+Content-Language: es
+Content-Type: text/html; charset=utf-8
+
+
+346682 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - org.springframework.web.servlet.mvc.ParameterizableViewController@2b660aa8
+346683 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - 
+355920 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - preHandle()
+355920 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/search HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Referer: http://localhost:8080/trackbox/
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+355920 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+
+
+355920 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica5.SearchController.searchInProjects(javax.servlet.http.HttpServletResponse,java.lang.Integer)
+355924 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica5.SearchController  - This is the 1 time!
+355924 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - postHandle()
+355924 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/search HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Referer: http://localhost:8080/trackbox/
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+355924 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+Expires: Thu, 01-Jan-1970 00:00:00 GMT
+Set-Cookie: queryCounter=1
+
+
+355924 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica5.SearchController.searchInProjects(javax.servlet.http.HttpServletResponse,java.lang.Integer)
+355924 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - ModelAndView: reference to view with name 'search'; model is {}
+356033 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - afterCompletion()
+356033 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/search HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Referer: http://localhost:8080/trackbox/
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m
+
+
+356033 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+Expires: Thu, 01-Jan-1970 00:00:00 GMT
+Content-Language: es
+Content-Type: text/html; charset=utf-8
+Set-Cookie: queryCounter=1
+
+
+356034 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica5.SearchController.searchInProjects(javax.servlet.http.HttpServletResponse,java.lang.Integer)
+356034 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - 
+360584 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - preHandle()
+360584 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/sprint/new HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Referer: http://localhost:8080/trackbox/
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m; queryCounter=1
+
+
+360584 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+
+
+360584 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica9.SprintModelAttributeController.crearSprint(org.springframework.ui.ModelMap)
+360585 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica9.SprintModelAttributeController  - Obtaining projects
+360590 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - postHandle()
+360590 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/sprint/new HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Referer: http://localhost:8080/trackbox/
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m; queryCounter=1
+
+
+360590 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+
+
+360590 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica9.SprintModelAttributeController.crearSprint(org.springframework.ui.ModelMap)
+360590 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - ModelAndView: reference to view with name 'sprint/new'; model is {projectList=[Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366], Project [id=2, name=The Vim Challenges, codeName=VIMCHALLENGES, description=Aplicacion para desafiar a tus amigos con VIM, dateCreated=2014-02-12 13:32:27.509, lastUpdated=2014-02-12 13:32:27.509], Project [id=3, name=Desarrollo Web con Spring, codeName=SPRING-WEB, description=Todos los temas de desarrollo web con Spring, dateCreated=2014-02-12 13:33:17.968, lastUpdated=2014-02-12 13:33:17.968], Project [id=4, name=My über taskboard, codeName=AGILE-TASKBOARD, description=Un tablero de control de proyectos con historias de usuario y tareas, dateCreated=2014-02-12 13:37:09.803, lastUpdated=2014-02-12 13:37:09.803]], sprintCommand=com.makingdevs.practica8.SprintCommand@1d3e0eb7, org.springframework.validation.BindingResult.sprintCommand=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+360595 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - afterCompletion()
+360595 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/sprint/new HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Referer: http://localhost:8080/trackbox/
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m; queryCounter=1
+
+
+360595 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+Content-Language: es
+Content-Type: text/html; charset=utf-8
+
+
+360595 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica9.SprintModelAttributeController.crearSprint(org.springframework.ui.ModelMap)
+360596 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - 
+439777 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - preHandle()
+439778 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Referer: http://localhost:8080/trackbox/
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m; queryCounter=1
+
+
+439778 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+
+
+439778 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica6.ProjectValidationController.allProjects(org.springframework.ui.Model)
+439785 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - postHandle()
+439785 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Referer: http://localhost:8080/trackbox/
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m; queryCounter=1
+
+
+439785 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+
+
+439785 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica6.ProjectValidationController.allProjects(org.springframework.ui.Model)
+439785 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - ModelAndView: reference to view with name 'project/list'; model is {message=Welcome to projects manager!, projects=[Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366], Project [id=2, name=The Vim Challenges, codeName=VIMCHALLENGES, description=Aplicacion para desafiar a tus amigos con VIM, dateCreated=2014-02-12 13:32:27.509, lastUpdated=2014-02-12 13:32:27.509], Project [id=3, name=Desarrollo Web con Spring, codeName=SPRING-WEB, description=Todos los temas de desarrollo web con Spring, dateCreated=2014-02-12 13:33:17.968, lastUpdated=2014-02-12 13:33:17.968], Project [id=4, name=My über taskboard, codeName=AGILE-TASKBOARD, description=Un tablero de control de proyectos con historias de usuario y tareas, dateCreated=2014-02-12 13:37:09.803, lastUpdated=2014-02-12 13:37:09.803]]}
+439787 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - afterCompletion()
+439787 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Referer: http://localhost:8080/trackbox/
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m; queryCounter=1
+
+
+439787 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+Content-Language: es
+Content-Type: text/html; charset=utf-8
+
+
+439787 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica6.ProjectValidationController.allProjects(org.springframework.ui.Model)
+439787 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - 
+441374 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - preHandle()
+441375 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Referer: http://localhost:8080/trackbox/project
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m; queryCounter=1
+
+
+441375 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+
+
+441375 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica7.UserStoryController.userStoriesForProject(java.lang.String,org.springframework.ui.Model)
+441383 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - postHandle()
+441383 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Referer: http://localhost:8080/trackbox/project
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m; queryCounter=1
+
+
+441383 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+
+
+441384 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica7.UserStoryController.userStoriesForProject(java.lang.String,org.springframework.ui.Model)
+441384 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - ModelAndView: reference to view with name 'userStory/project'; model is {project=Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366], userStories=[UserStory [id=1, description=Como usuario Quiero emitir facturas De tal manera que pueda entregarlas en XML y PDF, priority=1, effort=5, dateCreated=2014-02-12 13:34:19.591, lastUpdated=2014-02-12 13:34:19.591, project=Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366]], UserStory [id=2, description=Como usuario de finanzas Quiero un estado financiero De tal manera que pueda ver la facturación mensual, priority=2, effort=3, dateCreated=2014-02-12 13:34:55.822, lastUpdated=2014-02-12 13:34:55.822, project=Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366]]], org.springframework.validation.BindingResult.project=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+441385 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - afterCompletion()
+441385 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Referer: http://localhost:8080/trackbox/project
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m; queryCounter=1
+
+
+441386 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+Content-Language: es
+Content-Type: text/html; charset=utf-8
+
+
+441386 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica7.UserStoryController.userStoriesForProject(java.lang.String,org.springframework.ui.Model)
+441386 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - 
+442341 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - preHandle()
+442342 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories/1/task HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m; queryCounter=1
+
+
+442342 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+
+
+442342 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(org.springframework.ui.ModelMap)
+442351 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - postHandle()
+442351 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories/1/task HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m; queryCounter=1
+
+
+442351 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+Pragma: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: no-cache
+Cache-Control: no-store
+
+
+442351 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(org.springframework.ui.ModelMap)
+442351 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - ModelAndView: reference to view with name 'task/new'; model is {tasks=[Task [id=null, description=dnskndj, status=TODO, dateCreated=null, lastUpdated=null, userStory=null], Task [id=null, description=dsds, status=TODO, dateCreated=null, lastUpdated=null, userStory=null], Task [id=null, description=dsds, status=TODO, dateCreated=null, lastUpdated=null, userStory=null], Task [id=null, description=dsdsd, status=TODO, dateCreated=null, lastUpdated=null, userStory=null]], project=Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366], userStory=UserStory [id=1, description=Como usuario Quiero emitir facturas De tal manera que pueda entregarlas en XML y PDF, priority=1, effort=5, dateCreated=2014-02-12 13:34:19.591, lastUpdated=2014-02-12 13:34:19.591, project=Project [id=1, name=Módulo de Facturación, codeName=FACTURANOT, description=Desarrollo de la app de Facturacion, dateCreated=2014-02-12 13:31:52.366, lastUpdated=2014-02-12 13:31:52.366]], taskStatusList=[Lcom.makingdevs.model.TaskStatus;@705bc2a0, task=Task [id=null, description=null, status=null, dateCreated=null, lastUpdated=null, userStory=null], org.springframework.validation.BindingResult.tasks=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.project=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.userStory=org.springframework.validation.BeanPropertyBindingResult: 0 errors, org.springframework.validation.BindingResult.task=org.springframework.validation.BeanPropertyBindingResult: 0 errors}
+442355 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - afterCompletion()
+442355 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - GET /trackbox/project/FACTURANOT/userStories/1/task HTTP/1.1
+Host: localhost:8080
+Connection: keep-alive
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36
+Referer: http://localhost:8080/trackbox/project/FACTURANOT/userStories
+Accept-Encoding: gzip,deflate,sdch
+Accept-Language: es,es-419;q=0.8,en;q=0.6
+Cookie: JSESSIONID=1bs2gnnz1smy71pbrp0ddd5f1m; queryCounter=1
+
+
+442356 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - HTTP/1.1 200 
+Content-Language: es
+Content-Type: text/html; charset=utf-8
+Pragma: no-cache
+Expires: Thu, 01 Jan 1970 00:00:00 GMT
+Cache-Control: no-cache
+Cache-Control: no-store
+
+
+442356 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(org.springframework.ui.ModelMap)
+442356 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - 
