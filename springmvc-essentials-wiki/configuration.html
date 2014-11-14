@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>. : Entrenamiento - MakingDevs : .</title>
+  
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/starter-template.css">
+  <link rel="stylesheet" href="css/docs.css">
+
+</head>
+<body>
+
+  <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="http://makingdevs.com">
+          <img src="img/logo.png" alt="· MakingDevs ·">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="toc.html">Table of Contents</a>
+          </li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>    
+  </header>
+
+  <div class="bs-header" id="content">
+      <div class="container">
+        <h1>Desarrollo web con Spring 3/4</h1>
+        <div style="height:70px"> 
+          <p id="p1">Nuestro compromiso es ofrecerte una experiencia que realce las habilidades de aquellas personas que se dedican a desarrollar software.</p>
+          <p id="p2">Sabemos que la responsabilidad de crear aplicaciones debe de estar sustentada con habilidades que permitan garantizar la calidad de las mismas.</p>
+          <p id="p3">“Making best code, through better developers”</p>
+        </div>
+      </div>
+   </div><!--div del header fixed-->
+
+  <div class="container">
+    <div class="row">
+      <h1>Configuración esencial de SpringMVC</h1>
+<hr/><p>Hay dos formas de configurar SpringMVC : con Java Config y con el namespace XML.</p><p>Ambos enfoques proveen configuración por default que sobreescribe la del <code>DispatcherServlet</code>. El objetivo es reponer la mayoría de la aplicaciones de tener de crear la misma configuración y además de proveer constructores de alto nivel para que SpringMVC sirva de un punto de comienzo simple, y requiera poco o nulo conocimiento de tal configuración.</p><p>No hay ventajas entre configuraciones, sólo gustos y preferencias.</p><h2> Uso del namespace MVC de SpringMVC</h2>
+<div class="row">
+  <div class="col-md-12">
+    <h4><i class="icon-code"></i> trackbox-servlet.java</h4>
+    <script type="syntaxhighlighter" class="brush: java; highlight:[7];"><![CDATA[
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+  xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+    http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <mvc:annotation-driven />
+
+  <mvc:view-controller path="/" view-name="home" />
+
+  <mvc:resources location="/libs/" mapping="/static/**" />
+
+  <bean id="jspViewResolver"
+    class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+    <property name="viewClass"
+      value="org.springframework.web.servlet.view.JstlView" />
+    <property name="prefix" value="/WEB-INF/jsp/" />
+    <property name="suffix" value=".jsp" />
+  </bean>
+
+</beans>
+    ]]></script>
+  </div>
+</div><p>Lo anterior registra varios beans, un <code>RequestMappingHandlerMapping</code>, un <code>RequestMappingHandlerAdapter</code> y un <code>ExceptionHandlerExceptionResolver</code> con el soporte de procesar los requests con métodos de controladores anotados con <code>@RequestMapping</code>, <code>@ExceptionHandler</code>, y otros más.</p><h4>Protip</h4>
+<div class="row">
+  <div class="col-md-12">
+    <h4><i class="icon-code"></i> file.properties</h4>
+    <script type="syntaxhighlighter" class="brush: plain;"><![CDATA[
+application.version=1.0.0
+    ]]></script>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <h4><i class="icon-code"></i> trackbox-servlet.xml</h4>
+    <script type="syntaxhighlighter" class="brush: xml;"><![CDATA[
+<util:properties id="applicationProps" location="/WEB-INF/spring/application.properties"/>
+
+<mvc:resources mapping="/resources-#{applicationProps[application.version]}/**" location="/public-resources/"/>
+    ]]></script>
+  </div>
+</div><h2>Uso del MVC Java Config</h2>
+<div class="row">
+  <div class="col-md-6">
+    <h4><i class="icon-code"></i> WebConfig.java</h4>
+    <script type="syntaxhighlighter" class="brush: java; highlight:[14,15];"><![CDATA[
+package com.makingdevs.practica1;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.ViewResolver;
+import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;
+import org.springframework.web.servlet.config.annotation.ViewControllerRegistry;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.view.InternalResourceViewResolver;
+import org.springframework.web.servlet.view.JstlView;
+
+@Configuration
+@EnableWebMvc
+public class WebConfig extends WebMvcConfigurerAdapter {
+
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        registry.addResourceHandler("/static/**").addResourceLocations("/libs/");
+    }
+    
+    @Override
+    public void addViewControllers(ViewControllerRegistry registry) {
+        registry.addViewController("/").setViewName("home");
+    }
+    
+    @Bean
+    public ViewResolver viewResolver(){
+      InternalResourceViewResolver resolver = new InternalResourceViewResolver();
+      resolver.setViewClass(JstlView.class);
+      resolver.setPrefix("/WEB-INF/jsp/");
+      resolver.setSuffix(".jsp");
+      return resolver;
+    }
+
+}
+    ]]></script>
+  </div>
+  <div class="col-md-6">
+    <h4><i class="icon-code"></i> web.xml</h4>
+    <script type="syntaxhighlighter" class="brush: xml;"><![CDATA[
+<web-app xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+  version="3.0">
+
+  <servlet>
+    <servlet-name>trackbox</servlet-name>
+    <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+    <load-on-startup>1</load-on-startup>
+    <init-param>
+      <param-name>contextClass</param-name>
+      <param-value>org.springframework.web.context.support.AnnotationConfigWebApplicationContext</param-value>
+    </init-param>
+    <init-param>
+      <param-name>contextConfigLocation</param-name>
+      <param-value>com.makingdevs.practica1.WebConfig</param-value>
+    </init-param>
+
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>trackbox</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+
+  <!-- Deshabilita en el contenedor de Servlet el manejo de archivo de bienvenida. 
+    Necesario para la compatibilidad con Servlet 3.0 y Tomcat 7.0 -->
+  <welcome-file-list>
+    <welcome-file></welcome-file>
+  </welcome-file-list>
+
+</web-app>
+    ]]></script>
+  </div>
+</div>
+<div class="bs-callout bs-callout-info">
+<h4><i class="icon-coffee"></i> Información de utilidad</h4>
+  <p>
+    Absolutamente, toda la configuración que puedes hacer con XML la puedes realizar con anotaciones, y viceversa. Sin embargo, la diferencia radicara en las interfaces que deberás implementar si optas por usar Java Config, pero no te preocupes, no son díficiles y están bien documentadas.
+  </p>
+</div><h2><a href="http://docs.spring.io/spring/docs/current/javadoc-api/org/springframework/web/context/ContextLoaderListener.html"><code>ContextLoaderListener</code></a></h2><p>Uno de los conceptos expuestos por Spring en el modelo de aplicación ligero es la arquitectura por capas. Retomando la arquitectura <em>clásica</em> por capas, la capa web es una más de todas; sirve como punto de entrada dentro de una aplicación para delegar a objetos de servicio, cualquier otro objeto de negocio, DAO&rsquo;s, etc; tales objetos existen en una capa distinta dentro de otro <em>contexto</em>, <strong>¿cómo usamos y añadimos beans del contenedor de Spring dentro de nuestra aplicación?</strong></p>
+<div class="row">
+  <div class="col-md-12">
+    <h4><i class="icon-code"></i> WebConfig.java</h4>
+    <script type="syntaxhighlighter" class="brush: xml;"><![CDATA[
+  <listener>
+    <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+  </listener>
+
+  <context-param>
+    <param-name>contextConfigLocation</param-name>
+    <param-value>classpath:/**AppCtx.xml</param-value>
+  </context-param>
+  ]]></script>
+  </div>
+</div><p>Si no indicas el <code>contextConfigLocation</code>, entonces el listener buscará por un archivo ubicado en el directorio de la aplicación <code>WEB-INF/applicationContext.xml</code> que debe definir la carga de los beans de la aplicación. Una vez que los archivos son cargados al contexto, Spring crea el <code>WebApplicationContext</code> basado en las definiciones de los beans y los almacena en el <code>ServletContext</code> de la aplicación. </p><p>Un aspecto importante a considerar es que, no se crean varios application context, en lugar de ello, todo se va al mismo contenedor que se esta definiendo por DispatcherServlet, y los beans del contenedor pueden ser usados entre ellos por que están dentro del mismo contexto.</p>
+<div class="bs-callout bs-callout-info">
+<h4><i class="icon-coffee"></i> Información de utilidad</h4>
+  <p>
+    Si no estás usando SpringMVC y deseas usar algún otro framework o Servlet puro, este listener es el indicado, y la forma en la cual obtienes el application context es: <code>WebApplicationContext ctx = WebApplicationContextUtils.getWebApplicationContext(servletContext);</code>
+  </p>
+</div>
+    </div>
+  </div><!-- /.container -->
+
+  <footer id="footer" class="footer">
+    <div class="container">
+      <p class="credit text-muted">Powered by <a href="http://makingdevs.com">MakingDevs.com</a>.</p>
+    </div>
+  </footer>
+
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/shCore.js"></script>
+  <script type="text/javascript" src="js/shBrushJScript.js"></script>
+  <script type="text/javascript" src="js/shBrushGroovy.js"></script>
+  <script type="text/javascript" src="js/shBrushCss.js"></script>
+  <script type="text/javascript" src="js/shBrushJava.js"></script>
+  <script type="text/javascript" src="js/shBrushPlain.js"></script>
+  <script type="text/javascript" src="js/shBrushSql.js"></script>
+  <script type="text/javascript" src="js/shBrushXml.js"></script>
+  <script type="text/javascript" src="js/shBrushBash.js"></script>
+  <script type="text/javascript" src="js/shBrushPython.js"></script>
+  <link type="text/css" rel="stylesheet" href="css/shCoreDefault.css"/>
+  <script type="text/javascript">SyntaxHighlighter.all();</script>  
+  <script src="js/funciones.js"></script>
+</body>
+</html>

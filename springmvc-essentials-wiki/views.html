@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>. : Entrenamiento - MakingDevs : .</title>
+  
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/starter-template.css">
+  <link rel="stylesheet" href="css/docs.css">
+
+</head>
+<body>
+
+  <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="http://makingdevs.com">
+          <img src="img/logo.png" alt="· MakingDevs ·">
+        </a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav">
+          <li>
+            <a href="toc.html">Table of Contents</a>
+          </li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div>    
+  </header>
+
+  <div class="bs-header" id="content">
+      <div class="container">
+        <h1>Desarrollo web con Spring 3/4</h1>
+        <div style="height:70px"> 
+          <p id="p1">Nuestro compromiso es ofrecerte una experiencia que realce las habilidades de aquellas personas que se dedican a desarrollar software.</p>
+          <p id="p2">Sabemos que la responsabilidad de crear aplicaciones debe de estar sustentada con habilidades que permitan garantizar la calidad de las mismas.</p>
+          <p id="p3">“Making best code, through better developers”</p>
+        </div>
+      </div>
+   </div><!--div del header fixed-->
+
+  <div class="container">
+    <div class="row">
+      <h1>Generación de otras vistas</h1>
+<hr/><p>Existen varios tipos de implementación de una interfaz de nombre <code>ViewResolver</code>, que nos ayudan a definir el tipo de vista a entregar:</p>
+<ul>
+  <li><code>AbstractCachingViewResolver</code></li>
+  <li><code>AbstractTemplateViewResolver</code></li>
+  <li><code>BeanNameViewResolver</code></li>
+  <li><code>ContentNegotiatingViewResolver</code></li>
+  <li><code>FreeMarkerViewResolver</code></li>
+  <li><code>InternalResourceViewResolver</code></li>
+  <li><code>JasperReportsViewResolver</code></li>
+  <li><code>ResourceBundleViewResolver</code></li>
+  <li><code>TilesViewResolver</code></li>
+  <li><code>TilesViewResolver</code></li>
+  <li><code>UrlBasedViewResolver</code></li>
+  <li><code>VelocityLayoutViewResolver</code></li>
+  <li><code>VelocityViewResolver</code></li>
+  <li><code>XmlViewResolver</code></li>
+  <li><code>XsltViewResolver</code></li>
+</ul><p>Debemos considerar lo siguiente:</p>
+<ul>
+  <li>SpringMVC soporta múltiples ViewResolvers</li>
+  <li>Podemos sobreescribir vistas en ciertas circunstancias</li>
+  <li>Solo los agregamos y si es necesario usamos el atributo order(en donde el valor más bajo tiene la precendencia más alta)</li>
+  <li>Si ningún ViewResolver contiene la vista buscada, simplemente se arroja Exception</li>
+</ul>
+<div class="row">
+  <div class="col-md-12">
+    <h4><i class="icon-code"></i> WebConfig.java</h4>
+    <script type="syntaxhighlighter" class="brush: java;"><![CDATA[
+@Bean
+public InternalResourceViewResolver internalResourceViewResolver() {
+  InternalResourceViewResolver resolver = new InternalResourceViewResolver();
+  resolver.setViewClass(JstlView.class);
+  resolver.setPrefix("/WEB-INF/jsp/");
+  resolver.setSuffix(".jsp");
+  resolver.setOrder(10);
+  return resolver;
+}
+
+@Bean
+public BeanNameViewResolver beanNameViewResolver() {
+  BeanNameViewResolver resolver = new BeanNameViewResolver();
+  resolver.setOrder(0);
+  return resolver;
+}
+    ]]></script>
+  </div> 
+</div>
+<div class="row">
+  <div class="col-md-6">
+    <h4><i class="icon-code"></i> UserStoryExcelView.java</h4>
+    <script type="syntaxhighlighter" class="brush: java;"><![CDATA[
+package com.makingdevs.practica14;
+
+import java.util.List;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import jxl.write.Label;
+import jxl.write.WritableSheet;
+import jxl.write.WritableWorkbook;
+
+import org.springframework.stereotype.Component;
+import org.springframework.web.servlet.view.document.AbstractJExcelView;
+
+import com.makingdevs.model.UserStory;
+
+@Component
+public class UserStoryExcelView extends AbstractJExcelView {
+
+  @Override
+  protected void buildExcelDocument(Map<String, Object> model, WritableWorkbook workbook, HttpServletRequest request,
+      HttpServletResponse response) throws Exception {
+    WritableSheet sheet = workbook.createSheet("Tasks", 0);
+    List<UserStory> userStories= (List<UserStory>) model.get("userStories");
+    int i = 0;
+    
+    for (UserStory us : userStories) {
+      sheet.addCell(new Label(0, i, String.valueOf(us.getId())));
+      sheet.addCell(new Label(1,i,us.getDescription()));
+      sheet.addCell(new Label(2,i,us.getEffort().toString()));
+      sheet.addCell(new Label(3,i,us.getPriority().toString()));
+      i++;
+    }
+
+  }
+
+}
+    ]]></script>
+  </div> 
+  <div class="col-md-6">
+    <h4><i class="icon-code"></i> UserStoryPdfView.java</h4>
+    <script type="syntaxhighlighter" class="brush: java;"><![CDATA[
+package com.makingdevs.practica14;
+
+import java.util.List;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.springframework.stereotype.Component;
+import org.springframework.web.servlet.view.document.AbstractPdfView;
+
+import com.lowagie.text.Document;
+import com.lowagie.text.Paragraph;
+import com.lowagie.text.pdf.PdfWriter;
+import com.makingdevs.model.UserStory;
+
+@Component
+public class UserStoryPdfView extends AbstractPdfView {
+
+  @Override
+  protected void buildPdfDocument(Map<String, Object> model, Document document, PdfWriter writer,
+      HttpServletRequest request, HttpServletResponse response) throws Exception {
+    List<UserStory> userStories= (List<UserStory>) model.get("userStories");
+
+    int i = 0;
+    for (UserStory us : userStories) {
+      document.addAuthor("makingdevs");
+      document.addTitle("User Stories");
+      String buffer = String.valueOf(us.getId());
+      buffer += " - " + us.getDescription();
+      document.add(new Paragraph(buffer));
+      i++;
+    }
+    
+  }
+
+}
+    ]]></script>
+  </div> 
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <h4><i class="icon-code"></i> UserStoryExportController.java</h4>
+    <script type="syntaxhighlighter" class="brush: java;"><![CDATA[
+package com.makingdevs.practica14;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import com.makingdevs.model.UserStory;
+import com.makingdevs.services.UserStoryService;
+
+@Controller
+public class UserStoryExportController {
+  
+  @Autowired
+  UserStoryService userStoryService;
+
+  @RequestMapping("/project/{codeName}/userStory/exportToExcel")
+  public String exportToExcel(@PathVariable("codeName") String codeName, Model model) {
+    List<UserStory> userStories = userStoryService.findUserStoriesByProject(codeName);
+    model.addAttribute("userStories", userStories);
+    return "userStoryExcelView";
+  }
+  
+  @RequestMapping("/project/{codeName}/userStory/exportToPdf")
+  public String exportToPdf(@PathVariable("codeName") String codeName, Model model) {
+    List<UserStory> userStories = userStoryService.findUserStoriesByProject(codeName);
+    model.addAttribute("userStories", userStories);
+    return "userStoryPdfView";
+  }
+}
+    ]]></script>
+  </div> 
+</div><p>Crea un par de vínculos para que puedas accederlos:</p>
+<pre><code>&lt;a href=&quot;${pageContext.request.contextPath}/project/${project.codeName}/userStory/exportToExcel&quot; class=&quot;btn btn-default&quot;&gt; Export to excel &lt;/a&gt;  
+&lt;a href=&quot;${pageContext.request.contextPath}/project/${project.codeName}/userStory/exportToPdf&quot; class=&quot;btn btn-default&quot;&gt; Export to PDF &lt;/a&gt;
+</code></pre>
+<div class="bs-callout bs-callout-info">
+<h4><i class="icon-coffee"></i> Información de utilidad</h4>
+  <p>
+    Sin lugar a dudas, puedes comprobar el uso de cualquiera de los otros ViewResolvers, sin embargo, para fines pragmaticos el `BeanNameViewResolver` puede llegar a ser uno de los más útiles.
+  </p>
+</div>
+<div class="bs-callout bs-callout-warning">
+<h4><i class="icon-coffee"></i> Es tu turno!!</h4>
+  <p>
+    Implementa un reporte de User Story y/o Task con JasoerReports usando `JasperReportsMultiFormatView`.
+  </p>
+</div>
+    </div>
+  </div><!-- /.container -->
+
+  <footer id="footer" class="footer">
+    <div class="container">
+      <p class="credit text-muted">Powered by <a href="http://makingdevs.com">MakingDevs.com</a>.</p>
+    </div>
+  </footer>
+
+  <script src="js/jquery-1.10.2.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/shCore.js"></script>
+  <script type="text/javascript" src="js/shBrushJScript.js"></script>
+  <script type="text/javascript" src="js/shBrushGroovy.js"></script>
+  <script type="text/javascript" src="js/shBrushCss.js"></script>
+  <script type="text/javascript" src="js/shBrushJava.js"></script>
+  <script type="text/javascript" src="js/shBrushPlain.js"></script>
+  <script type="text/javascript" src="js/shBrushSql.js"></script>
+  <script type="text/javascript" src="js/shBrushXml.js"></script>
+  <script type="text/javascript" src="js/shBrushBash.js"></script>
+  <script type="text/javascript" src="js/shBrushPython.js"></script>
+  <link type="text/css" rel="stylesheet" href="css/shCoreDefault.css"/>
+  <script type="text/javascript">SyntaxHighlighter.all();</script>  
+  <script src="js/funciones.js"></script>
+</body>
+</html>
