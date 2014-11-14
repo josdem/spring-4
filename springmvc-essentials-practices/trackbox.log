@@ -1506,3 +1506,5 @@ Cache-Control: no-store
 
 442356 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - public java.lang.String com.makingdevs.practica10.TaskController.newTask(org.springframework.ui.ModelMap)
 442356 [1839612121@qtp-1713192791-2] DEBUG com.makingdevs.practica12.TimeOpeningInterceptor  - 
+0    [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+0    [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
