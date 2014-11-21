@@ -148,3 +148,4 @@ Session:	org.mortbay.jetty.servlet.HashSessionManager$Session@48c11a72[_clusterI
 8006 [855665148@qtp-734065863-3] DEBUG com.makingdevs.practica5.SearchController  - This is the 4 time!
 0    [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
 1    [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+0    [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
