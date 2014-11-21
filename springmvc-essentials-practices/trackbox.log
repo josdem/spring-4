@@ -137,3 +137,6 @@ Response:	org.mortbay.jetty.Response@2a30a4b[_connection=org.mortbay.jetty.HttpC
 0    [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
 39667 [970920645@qtp-746168863-0] DEBUG com.makingdevs.practica4.ExplorerController  - 
 Session:	org.mortbay.jetty.servlet.HashSessionManager$Session@48c11a72[_clusterId=hnq27g6rcgsdj2htkq7wvizh,_nodeId=hnq27g6rcgsdj2htkq7wvizh,_idChanged=false,_created=1416598968798,_cookieSet=0,_accessed=1416598968798,_lastAccessed=0,_invalid=false,_doInvalidate=false,_maxIdleMs=1800000,_newSession=true,_values=<null>,_requests=1]
+0    [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+0    [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+0    [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
