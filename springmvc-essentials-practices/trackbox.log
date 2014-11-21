@@ -140,3 +140,9 @@ Session:	org.mortbay.jetty.servlet.HashSessionManager$Session@48c11a72[_clusterI
 0    [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
 0    [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
 0    [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+72663 [774354114@qtp-1937276118-3] DEBUG com.makingdevs.practica5.SearchController  - This is the 1 time!
+1143173 [1852675311@qtp-1937276118-5] DEBUG com.makingdevs.practica5.SearchController  - This is the 2 time!
+0    [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+14124 [240154406@qtp-10860697-0] DEBUG com.makingdevs.practica5.SearchController  - This is the 3 time!
+0    [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+8006 [855665148@qtp-734065863-3] DEBUG com.makingdevs.practica5.SearchController  - This is the 4 time!

@@ -17,9 +17,6 @@
  
   <mvc:resources location="/libs/" mapping="/static/**" />
   
-  <import resource="classpath:PersistenceAppCtx.xml"/>
-  <import resource="classpath:ServicesAppCtx.xml"/>
- 
   <bean id="jspViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
     <property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
     <property name="prefix" value="/WEB-INF/jsp/" />
