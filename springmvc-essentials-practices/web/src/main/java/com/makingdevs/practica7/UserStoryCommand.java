@@ -12,8 +12,6 @@ import org.hibernate.validator.constraints.Range;
 import com.makingdevs.model.Project;
 import com.makingdevs.model.UserStory;
  
-// A lot of imports
- 
 public class UserStoryCommand {
    
   private Long id;
