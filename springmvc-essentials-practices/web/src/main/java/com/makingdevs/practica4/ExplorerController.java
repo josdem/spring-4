@@ -24,8 +24,6 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.makingdevs.model.Task;
  
-// A lot of imports
- 
 @Controller
 @RequestMapping("/explorer")
 public class ExplorerController {

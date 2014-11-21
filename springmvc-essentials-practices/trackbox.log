@@ -8,3 +8,132 @@
 0    [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
 0    [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
 0    [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+96248 [1761626440@qtp-499497789-0] DEBUG com.makingdevs.practica4.ExplorerController  - 
+Request:	org.mortbay.jetty.Request@7b2a5b53[_handled=true,_connection=org.mortbay.jetty.HttpConnection@21a8aeba,_endp=SCEP@1231505049[d=true,io=1,w=true,b=false|false],_roleMap=<null>,_attributes={org.springframework.web.servlet.DispatcherServlet.FLASH_MAP_MANAGER=org.springframework.web.servlet.support.SessionFlashMapManager@1dc5e353, org.springframework.web.servlet.DispatcherServlet.OUTPUT_FLASH_MAP=[Attributes={}, targetRequestPath=null, targetRequestParams={}], org.springframework.web.servlet.DispatcherServlet.THEME_SOURCE=WebApplicationContext for namespace 'trackbox-servlet': startup date [Fri Nov 21 13:36:26 CST 2014]; root of context hierarchy, org.springframework.web.servlet.DispatcherServlet.THEME_RESOLVER=org.springframework.web.servlet.theme.FixedThemeResolver@2acf6d6a, org.springframework.web.servlet.DispatcherServlet.CONTEXT=WebApplicationContext for namespace 'trackbox-servlet': startup date [Fri Nov 21 13:36:26 CST 2014]; root of context hierarchy, org.springframework.core.convert.ConversionService=ConversionService converters = 
+	@org.springframework.format.annotation.DateTimeFormat java.lang.Long -> java.lang.String: org.springframework.format.datetime.DateTimeFormatAnnotationFormatterFactory@4375243,@org.springframework.format.annotation.NumberFormat java.lang.Long -> java.lang.String: org.springframework.format.number.NumberFormatAnnotationFormatterFactory@486977c9
+	@org.springframework.format.annotation.DateTimeFormat java.util.Calendar -> java.lang.String: org.springframework.format.datetime.DateTimeFormatAnnotationFormatterFactory@4375243
+	@org.springframework.format.annotation.DateTimeFormat java.util.Date -> java.lang.String: org.springframework.format.datetime.DateTimeFormatAnnotationFormatterFactory@4375243
+	@org.springframework.format.annotation.NumberFormat java.lang.Double -> java.lang.String: org.springframework.format.number.NumberFormatAnnotationFormatterFactory@486977c9
+	@org.springframework.format.annotation.NumberFormat java.lang.Float -> java.lang.String: org.springframework.format.number.NumberFormatAnnotationFormatterFactory@486977c9
+	@org.springframework.format.annotation.NumberFormat java.lang.Integer -> java.lang.String: org.springframework.format.number.NumberFormatAnnotationFormatterFactory@486977c9
+	@org.springframework.format.annotation.NumberFormat java.lang.Short -> java.lang.String: org.springframework.format.number.NumberFormatAnnotationFormatterFactory@486977c9
+	@org.springframework.format.annotation.NumberFormat java.math.BigDecimal -> java.lang.String: org.springframework.format.number.NumberFormatAnnotationFormatterFactory@486977c9
+	@org.springframework.format.annotation.NumberFormat java.math.BigInteger -> java.lang.String: org.springframework.format.number.NumberFormatAnnotationFormatterFactory@486977c9
+	java.lang.Boolean -> java.lang.String : org.springframework.core.convert.support.ObjectToStringConverter@5e12cbd9
+	java.lang.Character -> java.lang.Number : org.springframework.core.convert.support.CharacterToNumberFactory@4ecab271
+	java.lang.Character -> java.lang.String : org.springframework.core.convert.support.ObjectToStringConverter@34a528bc
+	java.lang.Enum -> java.lang.String : org.springframework.core.convert.support.EnumToStringConverter@55a6dd82
+	java.lang.Long -> java.util.Calendar : org.springframework.format.datetime.DateFormatterRegistrar$LongToCalendarConverter@29c3a623
+	java.lang.Long -> java.util.Date : org.springframework.format.datetime.DateFormatterRegistrar$LongToDateConverter@3cf7b1f2
+	java.lang.Number -> java.lang.Character : org.springframework.core.convert.support.NumberToCharacterConverter@471569a4
+	java.lang.Number -> java.lang.Number : org.springframework.core.convert.support.NumberToNumberConverterFactory@1818601b
+	java.lang.Number -> java.lang.String : org.springframework.core.convert.support.ObjectToStringConverter@3e75f747
+	java.lang.String -> @org.springframework.format.annotation.DateTimeFormat java.lang.Long: org.springframework.format.datetime.DateTimeFormatAnnotationFormatterFactory@4375243,java.lang.String -> @org.springframework.format.annotation.NumberFormat java.lang.Long: org.springframework.format.number.NumberFormatAnnotationFormatterFactory@486977c9
+	java.lang.String -> @org.springframework.format.annotation.DateTimeFormat java.util.Calendar: org.springframework.format.datetime.DateTimeFormatAnnotationFormatterFactory@4375243
+	java.lang.String -> @org.springframework.format.annotation.DateTimeFormat java.util.Date: org.springframework.format.datetime.DateTimeFormatAnnotationFormatterFactory@4375243
+	java.lang.String -> @org.springframework.format.annotation.NumberFormat java.lang.Double: org.springframework.format.number.NumberFormatAnnotationFormatterFactory@486977c9
+	java.lang.String -> @org.springframework.format.annotation.NumberFormat java.lang.Float: org.springframework.format.number.NumberFormatAnnotationFormatterFactory@486977c9
+	java.lang.String -> @org.springframework.format.annotation.NumberFormat java.lang.Integer: org.springframework.format.number.NumberFormatAnnotationFormatterFactory@486977c9
+	java.lang.String -> @org.springframework.format.annotation.NumberFormat java.lang.Short: org.springframework.format.number.NumberFormatAnnotationFormatterFactory@486977c9
+	java.lang.String -> @org.springframework.format.annotation.NumberFormat java.math.BigDecimal: org.springframework.format.number.NumberFormatAnnotationFormatterFactory@486977c9
+	java.lang.String -> @org.springframework.format.annotation.NumberFormat java.math.BigInteger: org.springframework.format.number.NumberFormatAnnotationFormatterFactory@486977c9
+	java.lang.String -> java.lang.Boolean : org.springframework.core.convert.support.StringToBooleanConverter@5d894120
+	java.lang.String -> java.lang.Character : org.springframework.core.convert.support.StringToCharacterConverter@32bd765a
+	java.lang.String -> java.lang.Enum : org.springframework.core.convert.support.StringToEnumConverterFactory@240543cf
+	java.lang.String -> java.lang.Number : org.springframework.core.convert.support.StringToNumberConverterFactory@684d98f8
+	java.lang.String -> java.util.Locale : org.springframework.core.convert.support.StringToLocaleConverter@3e18adbc
+	java.lang.String -> java.util.Properties : org.springframework.core.convert.support.StringToPropertiesConverter@feb298e
+	java.lang.String -> java.util.UUID : org.springframework.core.convert.support.StringToUUIDConverter@6298545d
+	java.util.Calendar -> java.lang.Long : org.springframework.format.datetime.DateFormatterRegistrar$CalendarToLongConverter@223caae5
+	java.util.Calendar -> java.util.Date : org.springframework.format.datetime.DateFormatterRegistrar$CalendarToDateConverter@2f3e4946
+	java.util.Date -> java.lang.Long : org.springframework.format.datetime.DateFormatterRegistrar$DateToLongConverter@4bf9aede
+	java.util.Date -> java.util.Calendar : org.springframework.format.datetime.DateFormatterRegistrar$DateToCalendarConverter@754797c9
+	java.util.Locale -> java.lang.String : org.springframework.core.convert.support.ObjectToStringConverter@4636317d
+	java.util.Properties -> java.lang.String : org.springframework.core.convert.support.PropertiesToStringConverter@17f531cc
+	java.util.UUID -> java.lang.String : org.springframework.core.convert.support.ObjectToStringConverter@7ecad83c
+	org.springframework.core.convert.support.ArrayToArrayConverter@35ebae42
+	org.springframework.core.convert.support.ArrayToCollectionConverter@373a8c2c
+	org.springframework.core.convert.support.ArrayToObjectConverter@5a9bd19d
+	org.springframework.core.convert.support.ArrayToStringConverter@7c73067
+	org.springframework.core.convert.support.ByteBufferConverter@23c064af
+	org.springframework.core.convert.support.ByteBufferConverter@23c064af
+	org.springframework.core.convert.support.CollectionToArrayConverter@64c8b907
+	org.springframework.core.convert.support.CollectionToCollectionConverter@3fd8ab6
+	org.springframework.core.convert.support.CollectionToObjectConverter@1af383b0
+	org.springframework.core.convert.support.CollectionToStringConverter@2f57073c
+	org.springframework.core.convert.support.FallbackObjectToStringConverter@45d78531
+	org.springframework.core.convert.support.IdToEntityConverter@2c122f7f,org.springframework.core.convert.support.ObjectToObjectConverter@5dec5173
+	org.springframework.core.convert.support.MapToMapConverter@7a9db4c5
+	org.springframework.core.convert.support.ObjectToArrayConverter@2bdec8e4
+	org.springframework.core.convert.support.ObjectToCollectionConverter@694aa5a2
+	org.springframework.core.convert.support.StringToArrayConverter@263abe2e
+	org.springframework.core.convert.support.StringToCollectionConverter@7a9c0c6b
+, org.springframework.web.servlet.HandlerMapping.uriTemplateVariables={}, org.springframework.web.servlet.HandlerMapping.pathWithinHandlerMapping=/explorer/requestAndResponse, org.springframework.web.servlet.HandlerMapping.bestMatchingPattern=/explorer/requestAndResponse, org.springframework.web.servlet.DispatcherServlet.LOCALE_RESOLVER=org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@6bd05940, org.springframework.web.context.request.async.WebAsyncManager.WEB_ASYNC_MANAGER=org.springframework.web.context.request.async.WebAsyncManager@3b93b00c},_authType=<null>,_characterEncoding=<null>,_queryEncoding=<null>,_serverName=<null>,_remoteAddr=<null>,_remoteHost=<null>,_method=GET,_pathInfo=<null>,_port=0,_protocol=HTTP/1.1,_queryString=<null>,_requestedSessionId=muflluogug7frgsplt9k8qnh,_requestedSessionIdFromCookie=true,_requestURI=/trackbox/explorer/requestAndResponse,_scheme=http,_contextPath=/trackbox,_servletPath=/explorer/requestAndResponse,_servletName=trackbox,_uri=/trackbox/explorer/requestAndResponse,_userPrincipal=NOT CHECKED,_parameters=<null>,_baseParameters=<null>,_paramsExtracted=false,_inputState=0,_reader=<null>,_readerEncoding=<null>,_dns=false,_context=ServletContext@55e19391{/trackbox,file:/home/josdem/Development/spring-persistence/springmvc-essentials-practices/web/src/main/webapp/},_session=<null>,_sessionManager=org.mortbay.jetty.servlet.HashSessionManager@4c9f40a3,_cookiesExtracted=true,_cookies={javax.servlet.http.Cookie@78e6ed0f},_unparsedCookies={JSESSIONID=muflluogug7frgsplt9k8qnh},_timeStamp=1416598683521,_timeStampBuffer=<null>,_continuation=<null>,_requestAttributeListeners=<null>,_requestListeners=<null>,_savedNewSessions=<null>,_userRealm=<null>]
+96249 [1761626440@qtp-499497789-0] DEBUG com.makingdevs.practica4.ExplorerController  - 
+Response:	org.mortbay.jetty.Response@40c725d7[_connection=org.mortbay.jetty.HttpConnection@21a8aeba,_status=200,_reason=<null>,_locale=<null>,_mimeType=<null>,_cachedMimeType=<null>,_characterEncoding=<null>,_explicitEncoding=false,_contentType=<null>,_outputState=0,_writer=<null>]
+157273 [1761626440@qtp-499497789-0] DEBUG com.makingdevs.practica4.ExplorerController  - 
+Request:	org.mortbay.jetty.Request@538d117[_handled=true,_connection=org.mortbay.jetty.HttpConnection@55273fae,_endp=SCEP@63300655[d=true,io=1,w=true,b=false|false],_roleMap=<null>,_attributes={org.springframework.web.servlet.DispatcherServlet.FLASH_MAP_MANAGER=org.springframework.web.servlet.support.SessionFlashMapManager@1dc5e353, org.springframework.web.servlet.DispatcherServlet.OUTPUT_FLASH_MAP=[Attributes={}, targetRequestPath=null, targetRequestParams={}], org.springframework.web.servlet.DispatcherServlet.THEME_SOURCE=WebApplicationContext for namespace 'trackbox-servlet': startup date [Fri Nov 21 13:36:26 CST 2014]; root of context hierarchy, org.springframework.web.servlet.DispatcherServlet.THEME_RESOLVER=org.springframework.web.servlet.theme.FixedThemeResolver@2acf6d6a, org.springframework.web.servlet.DispatcherServlet.CONTEXT=WebApplicationContext for namespace 'trackbox-servlet': startup date [Fri Nov 21 13:36:26 CST 2014]; root of context hierarchy, org.springframework.core.convert.ConversionService=ConversionService converters = 
+	@org.springframework.format.annotation.DateTimeFormat java.lang.Long -> java.lang.String: org.springframework.format.datetime.DateTimeFormatAnnotationFormatterFactory@4375243,@org.springframework.format.annotation.NumberFormat java.lang.Long -> java.lang.String: org.springframework.format.number.NumberFormatAnnotationFormatterFactory@486977c9
+	@org.springframework.format.annotation.DateTimeFormat java.util.Calendar -> java.lang.String: org.springframework.format.datetime.DateTimeFormatAnnotationFormatterFactory@4375243
+	@org.springframework.format.annotation.DateTimeFormat java.util.Date -> java.lang.String: org.springframework.format.datetime.DateTimeFormatAnnotationFormatterFactory@4375243
+	@org.springframework.format.annotation.NumberFormat java.lang.Double -> java.lang.String: org.springframework.format.number.NumberFormatAnnotationFormatterFactory@486977c9
+	@org.springframework.format.annotation.NumberFormat java.lang.Float -> java.lang.String: org.springframework.format.number.NumberFormatAnnotationFormatterFactory@486977c9
+	@org.springframework.format.annotation.NumberFormat java.lang.Integer -> java.lang.String: org.springframework.format.number.NumberFormatAnnotationFormatterFactory@486977c9
+	@org.springframework.format.annotation.NumberFormat java.lang.Short -> java.lang.String: org.springframework.format.number.NumberFormatAnnotationFormatterFactory@486977c9
+	@org.springframework.format.annotation.NumberFormat java.math.BigDecimal -> java.lang.String: org.springframework.format.number.NumberFormatAnnotationFormatterFactory@486977c9
+	@org.springframework.format.annotation.NumberFormat java.math.BigInteger -> java.lang.String: org.springframework.format.number.NumberFormatAnnotationFormatterFactory@486977c9
+	java.lang.Boolean -> java.lang.String : org.springframework.core.convert.support.ObjectToStringConverter@5e12cbd9
+	java.lang.Character -> java.lang.Number : org.springframework.core.convert.support.CharacterToNumberFactory@4ecab271
+	java.lang.Character -> java.lang.String : org.springframework.core.convert.support.ObjectToStringConverter@34a528bc
+	java.lang.Enum -> java.lang.String : org.springframework.core.convert.support.EnumToStringConverter@55a6dd82
+	java.lang.Long -> java.util.Calendar : org.springframework.format.datetime.DateFormatterRegistrar$LongToCalendarConverter@29c3a623
+	java.lang.Long -> java.util.Date : org.springframework.format.datetime.DateFormatterRegistrar$LongToDateConverter@3cf7b1f2
+	java.lang.Number -> java.lang.Character : org.springframework.core.convert.support.NumberToCharacterConverter@471569a4
+	java.lang.Number -> java.lang.Number : org.springframework.core.convert.support.NumberToNumberConverterFactory@1818601b
+	java.lang.Number -> java.lang.String : org.springframework.core.convert.support.ObjectToStringConverter@3e75f747
+	java.lang.String -> @org.springframework.format.annotation.DateTimeFormat java.lang.Long: org.springframework.format.datetime.DateTimeFormatAnnotationFormatterFactory@4375243,java.lang.String -> @org.springframework.format.annotation.NumberFormat java.lang.Long: org.springframework.format.number.NumberFormatAnnotationFormatterFactory@486977c9
+	java.lang.String -> @org.springframework.format.annotation.DateTimeFormat java.util.Calendar: org.springframework.format.datetime.DateTimeFormatAnnotationFormatterFactory@4375243
+	java.lang.String -> @org.springframework.format.annotation.DateTimeFormat java.util.Date: org.springframework.format.datetime.DateTimeFormatAnnotationFormatterFactory@4375243
+	java.lang.String -> @org.springframework.format.annotation.NumberFormat java.lang.Double: org.springframework.format.number.NumberFormatAnnotationFormatterFactory@486977c9
+	java.lang.String -> @org.springframework.format.annotation.NumberFormat java.lang.Float: org.springframework.format.number.NumberFormatAnnotationFormatterFactory@486977c9
+	java.lang.String -> @org.springframework.format.annotation.NumberFormat java.lang.Integer: org.springframework.format.number.NumberFormatAnnotationFormatterFactory@486977c9
+	java.lang.String -> @org.springframework.format.annotation.NumberFormat java.lang.Short: org.springframework.format.number.NumberFormatAnnotationFormatterFactory@486977c9
+	java.lang.String -> @org.springframework.format.annotation.NumberFormat java.math.BigDecimal: org.springframework.format.number.NumberFormatAnnotationFormatterFactory@486977c9
+	java.lang.String -> @org.springframework.format.annotation.NumberFormat java.math.BigInteger: org.springframework.format.number.NumberFormatAnnotationFormatterFactory@486977c9
+	java.lang.String -> java.lang.Boolean : org.springframework.core.convert.support.StringToBooleanConverter@5d894120
+	java.lang.String -> java.lang.Character : org.springframework.core.convert.support.StringToCharacterConverter@32bd765a
+	java.lang.String -> java.lang.Enum : org.springframework.core.convert.support.StringToEnumConverterFactory@240543cf
+	java.lang.String -> java.lang.Number : org.springframework.core.convert.support.StringToNumberConverterFactory@684d98f8
+	java.lang.String -> java.util.Locale : org.springframework.core.convert.support.StringToLocaleConverter@3e18adbc
+	java.lang.String -> java.util.Properties : org.springframework.core.convert.support.StringToPropertiesConverter@feb298e
+	java.lang.String -> java.util.UUID : org.springframework.core.convert.support.StringToUUIDConverter@6298545d
+	java.util.Calendar -> java.lang.Long : org.springframework.format.datetime.DateFormatterRegistrar$CalendarToLongConverter@223caae5
+	java.util.Calendar -> java.util.Date : org.springframework.format.datetime.DateFormatterRegistrar$CalendarToDateConverter@2f3e4946
+	java.util.Date -> java.lang.Long : org.springframework.format.datetime.DateFormatterRegistrar$DateToLongConverter@4bf9aede
+	java.util.Date -> java.util.Calendar : org.springframework.format.datetime.DateFormatterRegistrar$DateToCalendarConverter@754797c9
+	java.util.Locale -> java.lang.String : org.springframework.core.convert.support.ObjectToStringConverter@4636317d
+	java.util.Properties -> java.lang.String : org.springframework.core.convert.support.PropertiesToStringConverter@17f531cc
+	java.util.UUID -> java.lang.String : org.springframework.core.convert.support.ObjectToStringConverter@7ecad83c
+	org.springframework.core.convert.support.ArrayToArrayConverter@35ebae42
+	org.springframework.core.convert.support.ArrayToCollectionConverter@373a8c2c
+	org.springframework.core.convert.support.ArrayToObjectConverter@5a9bd19d
+	org.springframework.core.convert.support.ArrayToStringConverter@7c73067
+	org.springframework.core.convert.support.ByteBufferConverter@23c064af
+	org.springframework.core.convert.support.ByteBufferConverter@23c064af
+	org.springframework.core.convert.support.CollectionToArrayConverter@64c8b907
+	org.springframework.core.convert.support.CollectionToCollectionConverter@3fd8ab6
+	org.springframework.core.convert.support.CollectionToObjectConverter@1af383b0
+	org.springframework.core.convert.support.CollectionToStringConverter@2f57073c
+	org.springframework.core.convert.support.FallbackObjectToStringConverter@45d78531
+	org.springframework.core.convert.support.IdToEntityConverter@2c122f7f,org.springframework.core.convert.support.ObjectToObjectConverter@5dec5173
+	org.springframework.core.convert.support.MapToMapConverter@7a9db4c5
+	org.springframework.core.convert.support.ObjectToArrayConverter@2bdec8e4
+	org.springframework.core.convert.support.ObjectToCollectionConverter@694aa5a2
+	org.springframework.core.convert.support.StringToArrayConverter@263abe2e
+	org.springframework.core.convert.support.StringToCollectionConverter@7a9c0c6b
+, org.springframework.web.servlet.HandlerMapping.uriTemplateVariables={}, org.springframework.web.servlet.HandlerMapping.pathWithinHandlerMapping=/explorer/requestAndResponse, org.springframework.web.servlet.HandlerMapping.bestMatchingPattern=/explorer/requestAndResponse, org.springframework.web.servlet.DispatcherServlet.LOCALE_RESOLVER=org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver@6bd05940, org.springframework.web.context.request.async.WebAsyncManager.WEB_ASYNC_MANAGER=org.springframework.web.context.request.async.WebAsyncManager@12c7835b},_authType=<null>,_characterEncoding=<null>,_queryEncoding=<null>,_serverName=<null>,_remoteAddr=<null>,_remoteHost=<null>,_method=GET,_pathInfo=<null>,_port=0,_protocol=HTTP/1.1,_queryString=<null>,_requestedSessionId=muflluogug7frgsplt9k8qnh,_requestedSessionIdFromCookie=true,_requestURI=/trackbox/explorer/requestAndResponse,_scheme=http,_contextPath=/trackbox,_servletPath=/explorer/requestAndResponse,_servletName=trackbox,_uri=/trackbox/explorer/requestAndResponse,_userPrincipal=NOT CHECKED,_parameters=<null>,_baseParameters=<null>,_paramsExtracted=false,_inputState=0,_reader=<null>,_readerEncoding=<null>,_dns=false,_context=ServletContext@55e19391{/trackbox,file:/home/josdem/Development/spring-persistence/springmvc-essentials-practices/web/src/main/webapp/},_session=<null>,_sessionManager=org.mortbay.jetty.servlet.HashSessionManager@4c9f40a3,_cookiesExtracted=true,_cookies={javax.servlet.http.Cookie@b9d1141},_unparsedCookies={JSESSIONID=muflluogug7frgsplt9k8qnh},_timeStamp=1416598744785,_timeStampBuffer=<null>,_continuation=<null>,_requestAttributeListeners=<null>,_requestListeners=<null>,_savedNewSessions=<null>,_userRealm=<null>]
+157274 [1761626440@qtp-499497789-0] DEBUG com.makingdevs.practica4.ExplorerController  - 
+Response:	org.mortbay.jetty.Response@2a30a4b[_connection=org.mortbay.jetty.HttpConnection@55273fae,_status=200,_reason=<null>,_locale=<null>,_mimeType=<null>,_cachedMimeType=<null>,_characterEncoding=<null>,_explicitEncoding=false,_contentType=<null>,_outputState=0,_writer=<null>]
+0    [main] DEBUG org.jboss.logging  - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+39667 [970920645@qtp-746168863-0] DEBUG com.makingdevs.practica4.ExplorerController  - 
+Session:	org.mortbay.jetty.servlet.HashSessionManager$Session@48c11a72[_clusterId=hnq27g6rcgsdj2htkq7wvizh,_nodeId=hnq27g6rcgsdj2htkq7wvizh,_idChanged=false,_created=1416598968798,_cookieSet=0,_accessed=1416598968798,_lastAccessed=0,_invalid=false,_doInvalidate=false,_maxIdleMs=1800000,_newSession=true,_values=<null>,_requests=1]
