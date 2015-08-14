@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="taskDescription1" class="java.lang.String">
+		<constructor-arg value="Create schema" />
+	</bean>
+
+	<bean id="task1" class="com.makingdevs.model.Task">
+		<property name="id" value="1" />
+		<property name="description" ref="taskDescription1" />
+		<property name="status">
+		  <value type="com.makingdevs.model.TaskStatus">
+		    TODO
+		  </value>
+		</property>
+		<property name="userStory" ref="userStory"/>
+	</bean>
+
+	<bean id="task2" class="com.makingdevs.model.Task">
+		<property name="id" value="2" />
+		<property name="description" value="Create folder structure" />
+		<property name="status">
+      <value type="com.makingdevs.model.TaskStatus">
+        TODO
+      </value>
+    </property>
+		<property name="userStory">
+			<null/>
+		</property>
+	</bean>
+
+</beans>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+  <bean id="projectFromConstructor" class="com.makingdevs.model.Project">
+    <property name="id" value="1"/>
+    <property name="name" value="My taskboards"/>
+    <property name="codeName" value="TASKBOARD"/>
+    <property name="description" value="Project description"/>
+  </bean>
+  
+  <bean id="userFromConstructor" class="com.makingdevs.model.User">
+    <property name="id" value="100"/>
+    <property name="username">
+      <value>makingdevs</value>
+    </property>
+    <property name="enabled" value="true"/>
+    <property name="dateCreated">
+      <bean class="java.util.Date" />
+    </property>
+  </bean>
+
+</beans>

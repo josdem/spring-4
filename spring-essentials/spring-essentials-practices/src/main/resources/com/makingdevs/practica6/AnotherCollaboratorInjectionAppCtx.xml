@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="userStory" class="com.makingdevs.model.UserStory">
+		<property name="priority" value="1" />
+		<property name="effort" value="3" />
+		<property name="tasks">
+			<array>
+				<ref bean="task1" />
+				<null />
+				<ref bean="task2" />
+				<bean id="task3" class="com.makingdevs.model.Task">
+					<property name="id" value="3" />
+					<property name="description" value="Initialize configuration" />
+					<property name="status">
+						<value type="com.makingdevs.model.TaskStatus">
+							TODO
+						</value>
+					</property>
+				</bean>
+			</array>
+		</property>
+	</bean>
+
+	<bean class="com.makingdevs.model.Project">
+		<property name="codeName" value="TASKBOARD" />
+		<property name="name" value="My Taskboard" />
+		<property name="id" value="2" />
+		<property name="userStories">
+			<array>
+				<ref bean="userStory" />
+			</array>
+		</property>
+		<property name="participants">
+			<set>
+				<bean class="com.makingdevs.model.User">
+					<property name="username" value="makingdevs" />
+					<property name="enabled" value="true" />
+					<property name="id" value="12" />
+				</bean>
+			</set>
+		</property>
+	</bean>
+
+</beans>

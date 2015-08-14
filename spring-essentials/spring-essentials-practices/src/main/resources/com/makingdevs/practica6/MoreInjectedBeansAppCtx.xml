@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<bean id="tres" class="java.lang.Integer">
+	 <constructor-arg value="3"/>
+	</bean>
+
+  <bean id="multiPropertiesBean" class="com.makingdevs.practica6.MultiPropertiesBean">
+    <property name="aMap">
+      <map>
+        <entry key="Uno"><value>1</value></entry>
+        <entry key="Dos" value="2"></entry>
+        <entry key="Uno" value-ref="tres"/>
+        <entry key="Tres" value-ref="tres"/>
+      </map>
+    </property>
+    <property name="multiLine">
+      <array>
+        <value>Welcome!!!</value>
+        <value>You're MakingDevs...</value>
+        <value>And you're here because...</value>
+        <value>You want to be a better developer!</value>
+      </array>
+    </property>
+    <property name="primeNumbers">
+      <set>
+        <value>1</value>
+        <value>3</value>
+        <value>5</value>
+        <value>7</value>
+        <value>11</value>
+        <value>13</value>
+      </set>
+    </property>
+    <property name="courseProperties">
+      <props>
+        <prop key="SPRING-ESSENTIALS">Diseño de aplicaciones con Spring</prop>
+        <prop key="SPRING-DATA_ACCESS">Acceso a datos con Spring</prop>
+        <prop key="SPRING-WEB">Desarrollo Web con Spring</prop>
+      </props>
+    </property>
+  </bean>
+
+</beans>

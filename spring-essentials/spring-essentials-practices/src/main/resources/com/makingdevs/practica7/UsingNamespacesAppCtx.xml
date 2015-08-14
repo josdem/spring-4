@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd">
+
+  <util:properties id="courseProperties" location="com/makingdevs/practica7/externalProperties.properties"/>
+
+	<bean id="tres" class="java.lang.Integer">
+		<constructor-arg value="3" />
+	</bean>
+
+	<util:map id="naturalNumbers">
+		<entry key="Uno">
+			<value>1</value>
+		</entry>
+		<entry key="Dos" value="2"></entry>
+		<entry key="Uno" value-ref="tres" />
+		<entry key="Tres" value-ref="tres" />
+	</util:map>
+
+	<util:list id="multiLine">
+		<value>Welcome!!!</value>
+		<value>You're MakingDevs...</value>
+		<value>And you're here because...</value>
+		<value>You want to be a better developer!</value>
+	</util:list>
+
+	<util:set id="primeNumbers">
+		<value>1</value>
+		<value>3</value>
+		<value>5</value>
+		<value>7</value>
+		<value>11</value>
+		<value>13</value>
+	</util:set>
+
+	<bean id="multiPropertiesBean" class="com.makingdevs.practica6.MultiPropertiesBean">
+    <property name="aMap" ref="naturalNumbers"/>
+    <property name="multiLine" ref="multiLine"/>
+    <property name="primeNumbers" ref="primeNumbers"/>
+    <property name="courseProperties" ref="courseProperties"/>
+	</bean>
+
+</beans>
